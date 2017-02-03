@@ -1,0 +1,12 @@
+/*
+ * fonctions.cpp
+ *
+ *  Created on: 2017-01-25
+ *      Author: etudiant
+ */
+#include "fonctions.hs"
+
+void saisirTableau(int* taille, int tableau[])
+{
+
+}

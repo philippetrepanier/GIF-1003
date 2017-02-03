@@ -1,0 +1,16 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017-01-20
+ *      Author: etudiant
+ */
+#include <iostream>
+using namespace std;
+
+int main() {
+	int nombrelignes;
+	cout << "Veuillez entrer un nombre: " << endl;
+	cin >> nombrelignes;
+
+}
+

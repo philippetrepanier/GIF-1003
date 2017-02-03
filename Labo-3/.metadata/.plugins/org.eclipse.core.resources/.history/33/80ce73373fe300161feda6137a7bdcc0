@@ -1,0 +1,15 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017-01-25
+ *      Author: etudiant
+ */
+#include <fonctions.cpp>
+#include <fonctions.h>
+
+const int MAX = 15;
+
+int main(void) {
+
+}
+

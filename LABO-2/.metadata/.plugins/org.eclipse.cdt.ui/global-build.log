@@ -1,0 +1,166 @@
+13:13:46 **** Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Exercice 3
+Invoking: GCC C++ Linker
+g++  -o "Exercice 3"  ./main.o   
+Finished building target: Exercice 3
+ 
+13:13:48 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+make: rien à faire pour « all ».
+13:14:07 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+make: rien à faire pour « all ».
+13:17:48 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../main2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main2.d" -MT"main2.o" -o "main2.o" "../main2.cpp"
+Finished building: ../main2.cpp
+ 
+Building target: Exercice 3
+Invoking: GCC C++ Linker
+g++  -o "Exercice 3"  ./main.o ./main2.o   
+./main2.o : Dans la fonction « main » :
+/home/etudiant/Bureau/LABO-2/Exercice 3/Debug/../main2.cpp:11 : définitions multiples de « main »
+./main.o:/home/etudiant/Bureau/LABO-2/Exercice 3/Debug/../main.cpp:11 : défini pour la première fois ici
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « Exercice 3 » a échouée
+make: *** [Exercice 3] Erreur 1
+13:17:50 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building target: Exercice 3
+Invoking: GCC C++ Linker
+g++  -o "Exercice 3"  ./main.o ./main2.o   
+./main2.o : Dans la fonction « main » :
+/home/etudiant/Bureau/LABO-2/Exercice 3/Debug/../main2.cpp:11 : définitions multiples de « main »
+./main.o:/home/etudiant/Bureau/LABO-2/Exercice 3/Debug/../main.cpp:11 : défini pour la première fois ici
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « Exercice 3 » a échouée
+make: *** [Exercice 3] Erreur 1
+13:18:04 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Exercice 3
+Invoking: GCC C++ Linker
+g++  -o "Exercice 3"  ./main.o ./main2.o   
+./main2.o : Dans la fonction « main » :
+/home/etudiant/Bureau/LABO-2/Exercice 3/Debug/../main2.cpp:11 : définitions multiples de « main »
+./main.o:/home/etudiant/Bureau/LABO-2/Exercice 3/Debug/../main.cpp:11 : défini pour la première fois ici
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « Exercice 3 » a échouée
+make: *** [Exercice 3] Erreur 1
+13:18:26 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Exercice 3
+Invoking: GCC C++ Linker
+g++  -o "Exercice 3"  ./main.o ./main2.o   
+Finished building target: Exercice 3
+ 
+13:18:29 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+make: rien à faire pour « all ».
+13:19:04 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../main2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main2.d" -MT"main2.o" -o "main2.o" "../main2.cpp"
+Finished building: ../main2.cpp
+ 
+Building target: Exercice 3
+Invoking: GCC C++ Linker
+g++  -o "Exercice 3"  ./main.o ./main2.o   
+Finished building target: Exercice 3
+ 
+13:19:06 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+make: rien à faire pour « all ».
+13:19:28 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+make: rien à faire pour « all ».
+13:19:44 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+make: rien à faire pour « all ».
+13:20:37 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:17:2: error: expected ‘;’ before ‘cout’
+  cout << "Entrez une phrase comprenant des espaces" << endl;
+  ^
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+13:20:53 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:17:2: error: expected ‘;’ before ‘cout’
+  cout << "Entrez une phrase comprenant des espaces" << endl;
+  ^
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+13:20:59 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Exercice 3
+Invoking: GCC C++ Linker
+g++  -o "Exercice 3"  ./main.o ./main2.o   
+Finished building target: Exercice 3
+ 
+13:21:01 **** Incremental Build of configuration Debug for project Exercice 3 ****
+make all 
+make: rien à faire pour « all ».
+13:47:42 **** Build of configuration Debug for project Exercice 4 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:15: warning: unused variable ‘nombredeclients’ [-Wunused-variable]
+  unsigned int nombredeclients = 0;
+               ^
+../main.cpp:12:9: warning: unused variable ‘totalcout’ [-Wunused-variable]
+  double totalcout = 0.00;
+         ^
+Finished building: ../main.cpp
+ 
+Building target: Exercice 4
+Invoking: GCC C++ Linker
+g++  -o "Exercice 4"  ./main.o   
+Finished building target: Exercice 4
+ 
+13:47:43 **** Incremental Build of configuration Debug for project Exercice 4 ****
+make all 
+make: rien à faire pour « all ».

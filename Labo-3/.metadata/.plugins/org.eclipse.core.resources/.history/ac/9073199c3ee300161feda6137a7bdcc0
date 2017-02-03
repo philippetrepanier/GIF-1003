@@ -1,0 +1,14 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017-01-25
+ *      Author: etudiant
+ */
+include fonctions.cpp
+
+const int MAX = 15;
+
+int main(void) {
+
+}
+

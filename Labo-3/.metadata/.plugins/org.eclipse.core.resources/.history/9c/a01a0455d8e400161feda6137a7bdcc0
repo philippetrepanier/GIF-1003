@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017-01-25
+ *      Author: etudiant
+ */
+#include <iostream>
+/*
+ #include <fonctions.cpp>
+ #include <fonctions.h>
+ */
+
+using namespace std;
+
+int main(void)
+{
+	int Julia = 0;
+	cin >> Julia;
+	cout << Julia << endl;
+	return 0;
+}
+

@@ -1,0 +1,24 @@
+/*
+ * fonctions.cpp
+ *
+ *  Created on: 2017-01-25
+ *      Author: etudiant
+ */
+#include <iostream>
+#include "fonctions.h"
+
+using namespace std;
+
+void saisirTableau(int* taille, int tableau[])
+{
+
+	cout << "Combien de valeurs voulez-vous entrer?";
+
+	cin >> *taille;
+
+	cout << "Entrez des entiers :" << endl;
+	for (int i = 0; i < *taille; ++i)
+	{
+		cin >> tableau[i];
+	}
+}

@@ -1,0 +1,15 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017-01-20
+ *      Author: etudiant
+ */
+#include <iostream>
+using namespace std;
+
+int main(void) {
+	unsigned int nombredeclients;
+
+	return 0;
+}
+

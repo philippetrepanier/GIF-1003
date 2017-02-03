@@ -1,0 +1,21 @@
+/**
+ * \file puissance.cpp
+ * \author FRM
+ * \date 2013-10-09
+ * \brief Programme d�mo calcul de x � la puissance y en langage C++
+ */
+#include <iostream>
+using namespace std;
+int main(void) {
+	int x = 100;
+	int y = 6;
+	int i = 0;
+	int puissance;
+	puissance = x;
+	while (i < y - 1) {
+		puissance = puisance * x;
+		i++;
+	}
+	return 0;
+}
+
