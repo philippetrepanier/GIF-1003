@@ -18,7 +18,7 @@ void saisie(int p_valeurs[], int nb_valeurs);
 int max(int p_valeurs[], int p_taille);
 int max_2d(int p_valeurs[HAUTEUR][LARGEUR]);
 
-void histogramme(int p_image[HAUTEUR][LARGEUR], int p_frequences[]);
+void histogramme(int p_image[][], int p_frequences[]);
 void affiche_histogramme(int p_frequences[], int p_valeurMax);
 void initialise(int* p_tableau, int nb_colonnes);
 

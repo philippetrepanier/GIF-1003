@@ -14,8 +14,8 @@
 #include "fonctionsUtilitaires.h"
 using namespace std;
 
-//const int LARGEUR = 13;
-//const int HAUTEUR = 13;
+const int LARGEUR = 13;
+const int HAUTEUR = 13;
 
 int main()
 {
@@ -42,7 +42,7 @@ int main()
 
 	//déclaration et initialisation du tableau de l'histogramme
 	int frequences[v];
-	initialise(frequences, v, 0); /// AJOUT DU 0 POUR POUVOIR UTILISER LA FONCTION IMPLÉMENTÉE
+	initialise(frequences, v);
 
 	//calcul de l'histogramme
 	histogramme(image, frequences);

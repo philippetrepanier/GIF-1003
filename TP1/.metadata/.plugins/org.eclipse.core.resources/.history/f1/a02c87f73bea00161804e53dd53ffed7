@@ -6,7 +6,6 @@
  */
 
 #include <iomanip>
-#include <iostream>
 
 #include "fonctionsUtilitaires.h"
 
@@ -65,7 +64,7 @@ void initialise(int* p_tableau, int nb_colonnes, int p_valeur)
 {
 	for (int j = 0; j < nb_colonnes; j++)
 	{
-		p_valeur = *p_tableau + j;
+		*p_tableau + j = p_valeur;
 	}
 }
 
@@ -93,7 +92,7 @@ void histogramme(int p_image[HAUTEUR][LARGEUR], int p_frequences[])
 void affiche_histogramme(int p_frequences[], int p_valeurMax)
 {
 	//affiche l'histogramme
-	cout << "....Histogramme...." << endl; //<< endl; // endl endl 2 fois
+	cout << "....Histogramme...." << endl << endl;
 	for (int i = 0; i < p_valeurMax; i++)
 	{
 		cout << left;

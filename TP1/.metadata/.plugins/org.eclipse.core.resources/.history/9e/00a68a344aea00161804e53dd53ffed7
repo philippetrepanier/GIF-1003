@@ -41,8 +41,8 @@ int main()
 	cout << v << endl;
 
 	//déclaration et initialisation du tableau de l'histogramme
-	int frequences[v];
-	initialise(frequences, v, 0); /// AJOUT DU 0 POUR POUVOIR UTILISER LA FONCTION IMPLÉMENTÉE
+	int frequences[v][v];
+	initialise(frequences, v, v);
 
 	//calcul de l'histogramme
 	histogramme(image, frequences);
