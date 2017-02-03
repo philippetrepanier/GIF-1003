@@ -62,7 +62,7 @@ void saisie(int p_valeurs[], int nb_valeurs)
  */
 void initialise(int* p_tableau, int nb_colonnes, int p_valeur)
 {
-	for (int j = 0; j < nb_colonnes; j++)
+	for (j = 0; j < nb_colonnes; j++)
 	{
 		*p_tableau + j = p_valeur;
 	}
