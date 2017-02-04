@@ -10,7 +10,6 @@
 #include <string>
 #include <algorithm>
 #include <sstream>
-#include <locale>
 
 using namespace std;
 
@@ -72,45 +71,31 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 	else
 	{
 		//Conception d'une string avec les paramètres fournis en entrée
-		stringstream numero_ss;
-		std::locale loc;
+		stringstream numero_fabrique;
 
 		//Mettre les lettres requises du prenom et du nom en majuscules et dans le bon ordre
-		for (int i = 0; i < 3; ++i)
+		int i = 0;
+		for (string::const_iterator lettre = p_nom.substr(0, 3).begin(), end = p_nom.substr(0, 3).end(); lettre != end;
+				++lettre, ++i)
 		{
-			numero_ss << toupper(p_nom[i], loc);
+			numero_fabrique << toupper(lettre);
 		}
 
-		numero_ss << toupper(p_prenom[0], loc);
-
-		if (p_anneeNaissance < 100)
+		//Pour un Homme
+		if (p_sex == 'M' || p_sex == 'm')
 		{
-			numero_ss << p_anneeNaissance;
+			numero_fabrique << endl;
+
 		}
-		else
-		{
-			numero_ss << p_anneeNaissance % 100;
-		}
-		/*
-		 //Pour un Homme
-		 if (p_sex == 'M' || p_sex == 'm')
-		 {
-		 numero_fabrique << endl;
 
-		 }
+//Pour une femme
 
-		 //Pour une femme
-
-		 //Découpage de la chaine afin d'isoler les parties à vérifier
-		 string numero_nom = numero_RAMQ.substr(0, 3);
-		 string numero_prenom = numero_RAMQ.substr(3, 1);
-		 string numero_annee = numero_RAMQ.substr(4, 2);
-		 string numero_mois = numero_RAMQ.substr(6, 2);
-		 string numero_jour = numero_RAMQ.substr(8, 2);
-		 */
-		string numero_fabrique = numero_ss.str();
-
-		cout << numero_fabrique << endl;
+//Découpage de la chaine afin d'isoler les parties à vérifier
+		string numero_nom = numero_RAMQ.substr(0, 3);
+		string numero_prenom = numero_RAMQ.substr(3, 1);
+		string numero_annee = numero_RAMQ.substr(4, 2);
+		string numero_mois = numero_RAMQ.substr(6, 2);
+		string numero_jour = numero_RAMQ.substr(8, 2);
 
 		return true;
 	}

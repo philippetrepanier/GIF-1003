@@ -470,3 +470,241 @@ Invoking: GCC C++ Linker
 g++  -o "Fonctions"  ./main.o ./validationFormat.o   
 Finished building target: Fonctions
  
+17:18:03 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+../validationFormat.cpp: In function ‘bool validerNumRAMQ(const string&, const string&, const string&, int, int, int, char)’:
+../validationFormat.cpp:82:37: error: no matching function for call to ‘toupper(std::__cxx11::basic_string<char>::const_iterator&)’
+    numero_fabrique << toupper(lettre);
+                                     ^
+In file included from /usr/include/c++/5/cctype:42:0,
+                 from /usr/include/c++/5/bits/localefwd.h:42,
+                 from /usr/include/c++/5/string:43,
+                 from ../validationFormat.h:11,
+                 from ../validationFormat.cpp:7:
+/usr/include/ctype.h:127:12: note: candidate: int toupper(int)
+ extern int toupper (int __c) __THROW;
+            ^
+/usr/include/ctype.h:127:12: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>::const_iterator {aka __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >}’ to ‘int’
+In file included from /usr/include/c++/5/bits/basic_ios.h:37:0,
+                 from /usr/include/c++/5/ios:44,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../validationFormat.cpp:8:
+/usr/include/c++/5/bits/locale_facets.h:2639:5: note: candidate: template<class _CharT> _CharT std::toupper(_CharT, const std::locale&)
+     toupper(_CharT __c, const locale& __loc)
+     ^
+/usr/include/c++/5/bits/locale_facets.h:2639:5: note:   template argument deduction/substitution failed:
+../validationFormat.cpp:82:37: note:   candidate expects 2 arguments, 1 provided
+    numero_fabrique << toupper(lettre);
+                                     ^
+make: *** [validationFormat.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « validationFormat.o » a échouée
+17:19:03 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+17:43:23 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+17:43:25 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+17:43:36 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+17:46:54 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+17:48:34 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+17:48:36 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+17:54:32 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+17:54:38 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:23:38 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:23:40 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:23:53 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:23:55 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:27:44 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:27:46 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:27:56 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:27:58 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:30:09 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:30:11 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:45:44 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+../validationFormat.cpp: In function ‘bool validerNumRAMQ(const string&, const string&, const string&, int, int, int, char)’:
+../validationFormat.cpp:98:4: error: ‘numero_fabrique’ was not declared in this scope
+    numero_fabrique << endl;
+    ^
+make: *** [validationFormat.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « validationFormat.o » a échouée
+18:46:06 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:46:08 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:46:17 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:46:19 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:46:23 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+18:46:25 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+make: rien à faire pour « all ».
+18:46:32 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 

@@ -83,15 +83,12 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 
 		numero_ss << toupper(p_prenom[0], loc);
 
-		if (p_anneeNaissance < 100)
-		{
-			numero_ss << p_anneeNaissance;
-		}
-		else
-		{
-			numero_ss << p_anneeNaissance % 100;
-		}
+		string numero_fabrique = numero_ss.str();
+
+		cout << numero_fabrique << endl;
+
 		/*
+
 		 //Pour un Homme
 		 if (p_sex == 'M' || p_sex == 'm')
 		 {
@@ -107,10 +104,8 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		 string numero_annee = numero_RAMQ.substr(4, 2);
 		 string numero_mois = numero_RAMQ.substr(6, 2);
 		 string numero_jour = numero_RAMQ.substr(8, 2);
+		 
 		 */
-		string numero_fabrique = numero_ss.str();
-
-		cout << numero_fabrique << endl;
 
 		return true;
 	}

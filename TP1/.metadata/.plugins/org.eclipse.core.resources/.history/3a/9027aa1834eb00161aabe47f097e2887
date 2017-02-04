@@ -91,23 +91,23 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		{
 			numero_ss << p_anneeNaissance % 100;
 		}
-		/*
-		 //Pour un Homme
-		 if (p_sex == 'M' || p_sex == 'm')
-		 {
-		 numero_fabrique << endl;
 
-		 }
+		//Pour un Homme
+		if (p_sex == 'M' || p_sex == 'm')
+		{
+			numero_fabrique << endl;
 
-		 //Pour une femme
+		}
 
-		 //Découpage de la chaine afin d'isoler les parties à vérifier
-		 string numero_nom = numero_RAMQ.substr(0, 3);
-		 string numero_prenom = numero_RAMQ.substr(3, 1);
-		 string numero_annee = numero_RAMQ.substr(4, 2);
-		 string numero_mois = numero_RAMQ.substr(6, 2);
-		 string numero_jour = numero_RAMQ.substr(8, 2);
-		 */
+		//Pour une femme
+
+		//Découpage de la chaine afin d'isoler les parties à vérifier
+		string numero_nom = numero_RAMQ.substr(0, 3);
+		string numero_prenom = numero_RAMQ.substr(3, 1);
+		string numero_annee = numero_RAMQ.substr(4, 2);
+		string numero_mois = numero_RAMQ.substr(6, 2);
+		string numero_jour = numero_RAMQ.substr(8, 2);
+
 		string numero_fabrique = numero_ss.str();
 
 		cout << numero_fabrique << endl;
