@@ -69,14 +69,6 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 	}
 	else
 	{
-		//Conception d'une string avec les paramètres fournis en entrée
-
-		//Découpage de la chaine afin d'isoler les parties à vérifier
-		string numero_nom = numero_RAMQ.substr(0, 3);
-		string numero_prenom = numero_RAMQ.substr(3, 1);
-		string numero_annee = numero_RAMQ.substr(4, 2);
-		string numero_mois = numero_RAMQ.substr(6, 2);
-		string numero_jour = numero_RAMQ.substr(8, 2);
 
 		return true;
 	}

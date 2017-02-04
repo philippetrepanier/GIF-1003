@@ -58,25 +58,15 @@ bool validerTelephone(const string& p_telephone)
 bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p_prenom, int p_jourNaissance,
 		int p_moisNaissance, int p_anneeNaissance, char p_sex)
 {
-	//Enlever les espaces dans le numero reçu en entrée
-	string numero_RAMQ = p_numero;
-	numero_RAMQ.erase(remove_if(numero_RAMQ.begin(), numero_RAMQ.end(), ::isspace), numero_RAMQ.end());
-
-	//Vérifier que le numero a 12 char de long
-	if (p_numero.size() != 12)
+	if (p_numero.size() != 12 || p_numero.size() != 14)
 	{
 		return false;
 	}
 	else
 	{
-		//Conception d'une string avec les paramètres fournis en entrée
-
-		//Découpage de la chaine afin d'isoler les parties à vérifier
-		string numero_nom = numero_RAMQ.substr(0, 3);
-		string numero_prenom = numero_RAMQ.substr(3, 1);
-		string numero_annee = numero_RAMQ.substr(4, 2);
-		string numero_mois = numero_RAMQ.substr(6, 2);
-		string numero_jour = numero_RAMQ.substr(8, 2);
+		string numero = p_numero;
+		numero.erase(remove_if(numero.begin(), numero.end(), ::isspace), numero.end());
+		cout << "numero pas de spaces: " << numero << endl;
 
 		return true;
 	}

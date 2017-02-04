@@ -16,10 +16,5 @@ int main()
 
 	cout << "Telephone valide: " << telephone << endl;
 
-	const string p_numero = "TREP97081805";
-	bool RAMQ = validerNumRAMQ(p_numero, "Trepanier", "Philippe", 18, 05, 1997, 'M');
-
-	cout << "RAMQ valide: " << RAMQ << endl;
-
 	return 0;
 }
