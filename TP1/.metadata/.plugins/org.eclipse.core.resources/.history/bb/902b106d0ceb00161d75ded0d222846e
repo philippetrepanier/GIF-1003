@@ -11,7 +11,6 @@
 #include "fonctionsUtilitaires.h"
 
 using namespace std;
-
 /**
  * \brief
  * \param[in] p_valeurs un tableau de valeurs
@@ -66,45 +65,45 @@ void initialise(int* p_tableau, int nb_colonnes, int p_valeur)
 {
 	for (int j = 0; j < nb_colonnes; j++)
 	{
-		p_tableau[j] = p_valeur;
-	}
+	()*p_tableau + j) = p_valeur;
+}
 }
 
 /**
  * \brief détermine l'histogramme d'une image passée sous la forme d'un tableau 2D
  * \param[in] p_image l'image source
  * \param[out] p_frequences occurences des valeurs des niveaux de gris
- */
-void histogramme(int p_image[HAUTEUR][LARGEUR], int p_frequences[])
-{
-	//calcule les frequences
-	for (int ligne = 0; ligne < HAUTEUR; ligne++)
-	{
-		for (int colonne = 0; colonne < LARGEUR; ++colonne)
-		{
-			p_frequences[p_image[ligne][colonne]]++;
-		}
-	}
-}
+ *
+ void histogramme(int p_image[HAUTEUR][LARGEUR], int p_frequences[])
+ {
+ //calcule les frequences
+ for (int ligne = 0; ligne < HAUTEUR; ligne++)
+ {
+ for (int colonne = 0; colonne < LARGEUR; ++colonne)
+ {
+ p_frequences[p_image[ligne][colonne]]++;
+ }
+ }
+ }
 
-/**
+ /**
  * \brief affiche l'histogramme sous forme d'étoiles
  * \param[in] p_frequences le tableau contenant les fréquences des valeurs correspondant à l'indice
  */
 void affiche_histogramme(int p_frequences[], int p_valeurMax)
 {
-	//affiche l'histogramme
-	cout << "....Histogramme...." << endl; //<< endl; // endl endl 2 fois
-	for (int i = 0; i < p_valeurMax; i++)
+//affiche l'histogramme
+cout << "....Histogramme...." << endl; //<< endl; // endl endl 2 fois
+for (int i = 0; i < p_valeurMax; i++)
+{
+	cout << left;
+	cout << i << " : ";
+	cout << p_frequences[i] << "\t";
+	for (int j = 0; j < p_frequences[i]; j++)
 	{
-		cout << left;
-		cout << i << " : ";
-		cout << p_frequences[i] << "\t";
-		for (int j = 0; j < p_frequences[i]; j++)
-		{
-			cout << "*";
-		}
-		cout << endl;
+		cout << "*";
 	}
+	cout << endl;
+}
 
 }
