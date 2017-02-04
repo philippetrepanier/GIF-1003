@@ -1,0 +1,9 @@
+/*
+ * validationFormat.cpp
+ *
+ *  Created on: 2017-02-04
+ *      Author: etudiant
+ */
+
+bool validerTelephone(const std::string& p_telephone);
+

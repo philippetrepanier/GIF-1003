@@ -1,0 +1,15 @@
+15:26:16 **** Incremental Build of configuration Debug for project Fonctions ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Fonctions
+Invoking: GCC C++ Linker
+g++  -o "Fonctions"  ./main.o ./validationFormat.o   
+Finished building target: Fonctions
+ 
+
+15:26:16 Build Finished (took 266ms)
+

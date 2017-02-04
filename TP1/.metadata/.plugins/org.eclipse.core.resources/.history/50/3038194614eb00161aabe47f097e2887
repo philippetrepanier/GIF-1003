@@ -1,0 +1,21 @@
+/*
+ * validationFormat.cpp
+ *
+ *  Created on: 2017-02-04
+ *      Author: etudiant
+ */
+#include "validationFormat.h"
+#include <iostream>
+
+using namespace std;
+
+bool validerTelephone(const string& p_telephone)
+{
+	for (string::const_iterator lettre = p_telephone.begin(), end = p_telephone.end(); lettre != end; ++lettre)
+	{
+		cout << "Un char: " << *lettre << endl;
+	}
+
+	return false;
+}
+
