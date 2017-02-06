@@ -48,7 +48,7 @@ bool validerTelephone(const string& p_telephone)
 					return false;
 				}
 			}
-			else if (not isdigit(*lettre, loc))
+			else if (isdigit(*lettre, loc))
 			{
 				return false;
 			}

@@ -13,7 +13,6 @@
 #include <locale>
 
 using namespace std;
-std::locale loc;
 
 bool validerTelephone(const string& p_telephone)
 {
@@ -48,7 +47,8 @@ bool validerTelephone(const string& p_telephone)
 					return false;
 				}
 			}
-			else if (not isdigit(*lettre, loc))
+			else if (*lettre != '0' && *lettre != '1' && *lettre != '2' && *lettre != '3' && *lettre != '4'
+					&& *lettre != '5' && *lettre != '6' && *lettre != '7' && *lettre != '8' && *lettre != '9')
 			{
 				return false;
 			}
@@ -73,6 +73,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 	{
 		//Conception d'une string avec les paramètres fournis en entrée
 		stringstream numero_ss;
+		std::locale loc;
 
 		//Mettre les lettres requises du prenom et du nom en majuscules et dans le bon ordre
 		for (int i = 0; i < 3; ++i)
@@ -83,6 +84,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		numero_ss << toupper(p_prenom[0], loc);
 
 		//Dépendant du format de l'année de naissance
+
 		if (p_anneeNaissance < 100)
 		{
 			numero_ss << p_anneeNaissance;
@@ -95,14 +97,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		//Pour un Homme
 		if (p_sex == 'M' || p_sex == 'm')
 		{
-			if (p_moisNaissance < 10)
-			{
-				numero_ss << 0 << p_moisNaissance;
-			}
-			else
-			{
-				numero_ss << p_moisNaissance;
-			}
+			numero_ss << p_moisNaissance;
 
 		}
 		//Pour une femme
@@ -111,32 +106,18 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 			numero_ss << (p_moisNaissance + 50);
 		}
 
-		//Jour de naissance
-		numero_ss << p_jourNaissance;
+		//Pour une femme
 
-		//Convertir le stream en string
+		//Découpage de la chaine afin d'isoler les parties à vérifier
+		string numero_nom = numero_RAMQ.substr(0, 3);
+		string numero_prenom = numero_RAMQ.substr(3, 1);
+		string numero_annee = numero_RAMQ.substr(4, 2);
+		string numero_mois = numero_RAMQ.substr(6, 2);
+		string numero_jour = numero_RAMQ.substr(8, 2);
+
 		string numero_fabrique = numero_ss.str();
 
-		//Vérifier que le string a bien 10 char de long, sinon erreur quelquepart
-		if (numero_fabrique.size() != 10)
-		{
-			return false;
-		}
-
-		//Boucler pour comparer les 10 premiers char de la string synth et entrée
-		for (int i = 0; i < 10; ++i)
-		{
-			if (numero_fabrique[i] != p_numero[i])
-			{
-				return false;
-			}
-		}
-
-		//Vérifier que les 2 derniers char du parametre sont des nombres
-		if (not isdigit(p_numero[10], loc) || not isdigit(p_numero[11], loc))
-		{
-			return false;
-		}
+		cout << numero_fabrique << endl;
 
 		return true;
 	}

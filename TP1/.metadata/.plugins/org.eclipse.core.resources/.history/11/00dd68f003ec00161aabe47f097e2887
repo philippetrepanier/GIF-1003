@@ -13,7 +13,6 @@
 #include <locale>
 
 using namespace std;
-std::locale loc;
 
 bool validerTelephone(const string& p_telephone)
 {
@@ -48,7 +47,8 @@ bool validerTelephone(const string& p_telephone)
 					return false;
 				}
 			}
-			else if (not isdigit(*lettre, loc))
+			else if (*lettre != '0' && *lettre != '1' && *lettre != '2' && *lettre != '3' && *lettre != '4'
+					&& *lettre != '5' && *lettre != '6' && *lettre != '7' && *lettre != '8' && *lettre != '9')
 			{
 				return false;
 			}
@@ -73,6 +73,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 	{
 		//Conception d'une string avec les paramètres fournis en entrée
 		stringstream numero_ss;
+		std::locale loc;
 
 		//Mettre les lettres requises du prenom et du nom en majuscules et dans le bon ordre
 		for (int i = 0; i < 3; ++i)
@@ -83,6 +84,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		numero_ss << toupper(p_prenom[0], loc);
 
 		//Dépendant du format de l'année de naissance
+
 		if (p_anneeNaissance < 100)
 		{
 			numero_ss << p_anneeNaissance;
@@ -112,6 +114,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		}
 
 		//Jour de naissance
+
 		numero_ss << p_jourNaissance;
 
 		//Convertir le stream en string
@@ -122,6 +125,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		{
 			return false;
 		}
+		cout << numero_fabrique << endl;
 
 		//Boucler pour comparer les 10 premiers char de la string synth et entrée
 		for (int i = 0; i < 10; ++i)
@@ -133,10 +137,6 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 		}
 
 		//Vérifier que les 2 derniers char du parametre sont des nombres
-		if (not isdigit(p_numero[10], loc) || not isdigit(p_numero[11], loc))
-		{
-			return false;
-		}
 
 		return true;
 	}
