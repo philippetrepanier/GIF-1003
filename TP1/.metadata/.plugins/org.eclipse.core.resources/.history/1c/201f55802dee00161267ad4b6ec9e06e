@@ -153,6 +153,12 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 			}
 		}
 
+		//Vérifier que les 2 derniers char du parametre sont des nombres
+		if (not isdigit(p_numero[10], loc) || not isdigit(p_numero[11], loc))
+		{
+			return false;
+		}
+
 		return true;
 	}
 	return false;
