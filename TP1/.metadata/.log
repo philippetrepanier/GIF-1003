@@ -373,3 +373,13 @@ org.eclipse.jface.text.BadLocationException
 
 !ENTRY org.eclipse.cdt.dsf.ui 2 0 2017-02-04 17:50:20.525
 !MESSAGE Unable to locate file: /build/glibc-tpy382/glibc-2.23/ctype/ctype.c
+!SESSION 2017-02-08 20:23:32.953 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -data .
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-02-09 12:18:45.639
+!MESSAGE Indexed 'test' (0 sources, 0 headers) in 0,003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
