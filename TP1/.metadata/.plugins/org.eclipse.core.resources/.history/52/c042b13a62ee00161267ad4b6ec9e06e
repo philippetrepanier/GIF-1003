@@ -57,26 +57,11 @@ bool validerTelephone(const string& p_telephone)
 		}
 
 		//Vérification de l'indicatif régional dans la liste connue
-		string liste_indicatifs[54] =
+		string liste_indicatifs[] =
 		{ "403", "587", "780", "825", "236", "250", "604", "778", "204", "431", "506", "709", "902", "226", "249",
 				"289", "343", "365", "416", "437", "519", "613", "647", "705", "807", "905", "418", "438", "450", "514",
 				"579", "581", "819", "873", "306", "867", "900", "800", "822", "833", "844", "855", "866", "877", "880",
-				"881", "882", "883", "884", "885", "886", "887", "888", "889" };
-
-		// Variable temporaire
-		int indicatif_dans_liste = 0;
-		for (int i = 0; i < 54; ++i)
-		{
-			if (p_telephone.substr(0, 3) == liste_indicatifs[i])
-			{
-				indicatif_dans_liste += 1;
-			}
-		}
-
-		if (indicatif_dans_liste == 0)
-		{
-			return false;
-		}
+				"881", "882", "883", "884", "885", "886", "887", "888", "889" }
 
 		return true;
 	}

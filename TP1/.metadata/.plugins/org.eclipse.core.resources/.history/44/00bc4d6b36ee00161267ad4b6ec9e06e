@@ -94,13 +94,13 @@ void histogramme(int p_image[HAUTEUR][LARGEUR], int p_frequences[])
 void affiche_histogramme(int p_frequences[], int p_valeurMax)
 {
 	//affiche l'histogramme
-	cout << "....Histogramme...." << endl << endl;
-	for (int i = 0; i <= p_valeurMax; i++)
+	cout << "....Histogramme...." << endl; //<< endl; // endl endl 2 fois
+	for (int i = 0; i < p_valeurMax; i++)
 	{
 		cout << left;
 		cout << i << " : ";
 		cout << p_frequences[i] << "\t";
-		for (int j = 0; j < p_frequences[i]; j++)
+		for (int j = 0; j <= p_frequences[i]; j++)
 		{
 			cout << "*";
 		}

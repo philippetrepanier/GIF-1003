@@ -1,20 +1,6 @@
-14:10:29 **** Incremental Build of configuration Debug for project Investigation ****
+19:37:44 **** Incremental Build of configuration Debug for project Investigation ****
 make all 
-Building file: ../fonctionsUtilitaires.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fonctionsUtilitaires.d" -MT"fonctionsUtilitaires.o" -o "fonctionsUtilitaires.o" "../fonctionsUtilitaires.cpp"
-Finished building: ../fonctionsUtilitaires.cpp
- 
-Building file: ../programmePrincipal.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"programmePrincipal.d" -MT"programmePrincipal.o" -o "programmePrincipal.o" "../programmePrincipal.cpp"
-Finished building: ../programmePrincipal.cpp
- 
-Building target: Investigation
-Invoking: GCC C++ Linker
-g++  -o "Investigation"  ./fonctionsUtilitaires.o ./programmePrincipal.o   
-Finished building target: Investigation
- 
+make: rien à faire pour « all ».
 
-14:10:29 Build Finished (took 319ms)
+19:37:44 Build Finished (took 72ms)
 
