@@ -184,4 +184,26 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 	}
 	return false;
 }
+bool validerFormatNom(const string& p_nom)
+{
+	if (p_nom.size() == 0)
+	{
+		return false;
+	}
+	else
+	{
+		//Vérification que ce soit juste des lettres
+		int i = 0;
+		for (string::const_iterator lettre = p_nom.begin(), end = p_nom.end(); lettre != end; ++lettre, ++i)
+		{
+			if (not isalpha(*lettre, loc))
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
 } // namespace util
+

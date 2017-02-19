@@ -1,0 +1,19 @@
+/**
+ * \file main.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-02-19
+ */
+
+#include "Personne.h"
+#include <iostream>
+#include <sstream>
+
+int main()
+{
+	tp::Personne julie("Bou", "Julie", DATE, "418 658-2888");
+
+	return 0;
+
+}
+

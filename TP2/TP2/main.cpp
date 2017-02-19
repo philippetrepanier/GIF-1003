@@ -11,6 +11,10 @@
 
 int main()
 {
+	tp::Personne julie("Bou", "Julie", util::Date(18, 5, 1997), "418 658-2888");
+
+	std::cout << julie.reqPersonneFormate() << std::endl;
+
 	return 0;
 
 }
