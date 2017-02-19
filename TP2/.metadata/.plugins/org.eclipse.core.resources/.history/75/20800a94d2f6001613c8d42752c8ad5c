@@ -1,0 +1,22 @@
+/**
+ * \file Personne.h
+ * \brief
+ * \author etudiant
+ * \date 2017-02-19
+ */
+
+#ifndef PERSONNE_H_
+#define PERSONNE_H_
+
+#include <string.h>
+
+class Personne
+{
+public:
+
+private:
+	string m_nom;
+	string m_prenom;
+};
+
+#endif /* PERSONNE_H_ */
