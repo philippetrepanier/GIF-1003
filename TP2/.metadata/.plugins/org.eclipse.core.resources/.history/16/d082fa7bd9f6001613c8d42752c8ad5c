@@ -22,20 +22,17 @@ const std::string& tp::Personne::reqPrenom() const
 
 util::Date tp::Personne::reqDateNaissance() const
 {
-	return m_dateNaissance;
+	return p_dateNaissance;
 }
 
 const std::string& tp::Personne::reqTelephone() const
 {
-	return m_telephone;
+	return p_telephone;
 }
 
-void tp::Personne::asgTelephone(const std::string& p_telephone)
+void tp::Personne::asgTelephone(const std::string& telephone)
 {
-	if (util::validerTelephone(p_telephone) == true)
-	{
-		m_telephone = p_telephone;
-	}
+	p_telephone = telephone;
 }
 
 tp::Personne::Personne(const std::string& p_nom, const std::string& p_prenom, const util::Date& p_dateNaissance,
@@ -46,11 +43,6 @@ tp::Personne::Personne(const std::string& p_nom, const std::string& p_prenom, co
 const std::string tp::Personne::reqPersonneFormate() const
 {
 	return "TEMP_STRING";
-}
-
-bool Personne::operator ==(const Personne& p_personne) const
-{
-	return true;
 }
 
 } // namespace tp

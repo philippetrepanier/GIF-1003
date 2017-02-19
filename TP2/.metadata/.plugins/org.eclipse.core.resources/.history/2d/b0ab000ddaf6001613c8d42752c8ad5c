@@ -35,6 +35,7 @@ void tp::Personne::asgTelephone(const std::string& p_telephone)
 	if (util::validerTelephone(p_telephone) == true)
 	{
 		m_telephone = p_telephone;
+
 	}
 }
 
@@ -46,11 +47,6 @@ tp::Personne::Personne(const std::string& p_nom, const std::string& p_prenom, co
 const std::string tp::Personne::reqPersonneFormate() const
 {
 	return "TEMP_STRING";
-}
-
-bool Personne::operator ==(const Personne& p_personne) const
-{
-	return true;
 }
 
 } // namespace tp

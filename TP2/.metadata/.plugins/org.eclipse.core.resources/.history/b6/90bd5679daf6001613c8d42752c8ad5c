@@ -79,9 +79,9 @@ bool validerTelephone(const string& p_telephone)
 		{
 			return false;
 		}
-	} // namespace tp
 
-	return true;
+		return true;
+	}
 }
 
 bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p_prenom, int p_jourNaissance,

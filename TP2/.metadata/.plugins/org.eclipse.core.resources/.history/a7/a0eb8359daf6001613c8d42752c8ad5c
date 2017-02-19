@@ -50,7 +50,6 @@ const std::string tp::Personne::reqPersonneFormate() const
 
 bool Personne::operator ==(const Personne& p_personne) const
 {
-	return true;
 }
 
 } // namespace tp

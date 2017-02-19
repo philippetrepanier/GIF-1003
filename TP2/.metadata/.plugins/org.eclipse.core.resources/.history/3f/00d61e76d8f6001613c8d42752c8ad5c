@@ -10,7 +10,6 @@
 
 #include <string>
 #include "Date.h"
-#include "validationFormat.h"
 
 namespace tp
 {
@@ -29,19 +28,15 @@ public:
 	const std::string& reqPrenom() const;
 	util::Date reqDateNaissance() const;
 	const std::string& reqTelephone() const;
-	const std::string reqPersonneFormate() const;
 
 	//Setters
 	void asgTelephone(const std::string& telephone);
 
-	//Surcharge
-	bool operator==(const Personne& p_personne) const;
-
 private:
 	std::string m_nom;
 	std::string m_prenom;
-	std::string m_telephone;
-	util::Date m_dateNaissance;
+	std::string p_telephone;
+	util::Date p_dateNaissance;
 
 };
 } // namespace tp

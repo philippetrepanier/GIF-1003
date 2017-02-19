@@ -1,3 +1,193 @@
 14:12:10 **** Incremental Build of configuration Debug for project TP2 ****
 make all 
 make: rien à faire pour « all ».
+14:16:29 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++  -o "TP2"  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o   
+Finished building target: TP2
+ 
+14:20:57 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘const string tp::Personne::reqPersonneFormate() const’:
+../Personne.cpp:45:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Personne.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++  -o "TP2"  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o   
+Finished building target: TP2
+ 
+14:22:25 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++  -o "TP2"  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o   
+Finished building target: TP2
+ 
+14:27:44 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++  -o "TP2"  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o   
+Finished building target: TP2
+ 
+14:33:56 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘void tp::Personne::asgTelephone(const string&)’:
+../Personne.cpp:35:6: error: ‘validerTelephone’ is not a member of ‘util’
+  if (util::validerTelephone(p_telephone) == true)
+      ^
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+make: *** [Personne.o] Erreur 1
+14:34:40 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘void tp::Personne::asgTelephone(const string&)’:
+../Personne.cpp:35:6: error: ‘validerTelephone’ is not a member of ‘util’
+  if (util::validerTelephone(p_telephone) == true)
+      ^
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+make: *** [Personne.o] Erreur 1
+14:34:43 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘void tp::Personne::asgTelephone(const string&)’:
+../Personne.cpp:35:6: error: ‘validerTelephone’ is not a member of ‘util’
+  if (util::validerTelephone(p_telephone) == true)
+      ^
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+make: *** [Personne.o] Erreur 1
+14:34:48 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘void tp::Personne::asgTelephone(const string&)’:
+../Personne.cpp:35:6: error: ‘validerTelephone’ is not a member of ‘util’
+  if (util::validerTelephone(p_telephone) == true)
+      ^
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+make: *** [Personne.o] Erreur 1
+14:34:52 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘void tp::Personne::asgTelephone(const string&)’:
+../Personne.cpp:35:6: error: ‘validerTelephone’ is not a member of ‘util’
+  if (util::validerTelephone(p_telephone) == true)
+      ^
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+make: *** [Personne.o] Erreur 1
+14:35:55 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘void tp::Personne::asgTelephone(const string&)’:
+../Personne.cpp:35:6: error: ‘validerTelephone’ is not a member of ‘util’
+  if (util::validerTelephone(p_telephone) == true)
+      ^
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+make: *** [Personne.o] Erreur 1
+14:36:29 **** Clean-only build of configuration Debug for project TP2 ****
+make clean 
+rm -rf  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o  ./ContratException.d ./Date.d ./Personne.d ./main.d ./validationFormat.d  TP2
+ 
+14:36:30 **** Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+../Personne.cpp: In member function ‘void tp::Personne::asgTelephone(const string&)’:
+../Personne.cpp:35:6: error: ‘validerTelephone’ is not a member of ‘util’
+  if (util::validerTelephone(p_telephone) == true)
+      ^
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+make: *** [Personne.o] Erreur 1
+14:36:56 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+In file included from ../Personne.cpp:8:0:
+../Personne.h:13:27: fatal error: validerFormat.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+make: *** [Personne.o] Erreur 1
+subdir.mk:30 : la recette pour la cible « Personne.o » a échouée
+14:37:04 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++  -o "TP2"  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o   
+Finished building target: TP2
+ 

@@ -1,6 +1,25 @@
-14:12:10 **** Incremental Build of configuration Debug for project TP2 ****
+14:37:04 **** Incremental Build of configuration Debug for project TP2 ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++  -o "TP2"  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o   
+Finished building target: TP2
+ 
 
-14:12:10 Build Finished (took 63ms)
+14:37:05 Build Finished (took 693ms)
 

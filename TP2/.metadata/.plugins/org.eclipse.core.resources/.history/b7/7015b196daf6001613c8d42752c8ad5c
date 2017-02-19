@@ -83,6 +83,7 @@ bool validerTelephone(const string& p_telephone)
 
 	return true;
 }
+}
 
 bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p_prenom, int p_jourNaissance,
 		int p_moisNaissance, int p_anneeNaissance, char p_sex)
