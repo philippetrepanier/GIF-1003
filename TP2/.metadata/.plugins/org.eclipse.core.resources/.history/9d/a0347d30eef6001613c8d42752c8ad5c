@@ -1,0 +1,78 @@
+/**
+ * \file main.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-02-19
+ */
+
+#include "Personne.h"
+#include <iostream>
+#include <sstream>
+using namespace std;
+using namespace tp;
+
+int main()
+{
+	cout << "=============================================" << endl;
+	cout << "|Bienvenue à l'outil d'ajout d'une personne!|" << endl;
+	cout << "=============================================" << endl << endl;
+
+	//Entrée du nom
+	cout << "-Entrez le nom de la personne: " << endl;
+	string nom;
+	char buffer[256];
+	cin.getline(buffer, 255);
+	nom = buffer;
+
+	while (util::validerFormatNom(nom) == false)
+	{
+		cout << "Le nom de la personne ne doit comporter que des lettres" << endl;
+		cout << "-Entrez le nom de la personne: " << endl;
+		cin.getline(buffer, 255);
+		nom = buffer;
+	}
+
+	//Entrée du prenom
+	cout << endl << "-Entrez le prenom de la personne: " << endl;
+	string prenom;
+	cin.getline(buffer, 255);
+	prenom = buffer;
+
+	while (util::validerFormatNom(prenom) == false)
+	{
+		cout << "Le prenom de la personne ne doit comporter que des lettres" << endl;
+		cout << "-Entrez le prenom de la personne: " << endl;
+		cin.getline(buffer, 255);
+		prenom = buffer;
+	}
+
+	//Entrée du numero de telephone
+	cout << endl << "-Entrez le numero de telephone de la personne: " << endl;
+	string telephone;
+	cin.getline(buffer, 255);
+	telephone = buffer;
+
+	while (util::validerTelephone(telephone) == false)
+	{
+		cout << "Le numero de telephone doit avoir un format valide" << endl;
+		cout << "-Entrez le numero de telephone de la personne: " << endl;
+		cin.getline(buffer, 255);
+		telephone = buffer;
+	}
+
+	cout << nom << endl;
+	cout << prenom << endl;
+	cout << telephone << endl;
+
+	tp::Personne julie("Bou", "Julie", util::Date(18, 5, 1997), "418 658-2888");
+	tp::Personne julie2("Bou", "Julie", util::Date(18, 5, 1997), "418 658-2888");
+
+	std::cout << julie.reqPersonneFormate() << std::endl;
+	std::cout << julie2.reqPersonneFormate() << std::endl << "--" << std::endl;
+
+	std::cout << (julie == julie2) << std::endl;
+
+	return 0;
+
+}
+

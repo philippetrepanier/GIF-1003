@@ -12,28 +12,28 @@ using namespace std;
 namespace tp
 {
 
-const std::string& tp::Personne::reqNom() const
+const string& Personne::reqNom() const
 {
 	return m_nom;
 }
 
-const std::string& tp::Personne::reqPrenom() const
+const string& Personne::reqPrenom() const
 {
 	return m_prenom;
 }
 
-util::Date tp::Personne::reqDateNaissance() const
+util::Date Personne::reqDateNaissance() const
 {
 
 	return m_dateNaissance;
 }
 
-const std::string& tp::Personne::reqTelephone() const
+const string& Personne::reqTelephone() const
 {
 	return m_telephone;
 }
 
-void tp::Personne::asgTelephone(const std::string& p_telephone)
+void Personne::asgTelephone(const string& p_telephone)
 {
 	if (util::validerTelephone(p_telephone) == true)
 	{
@@ -41,7 +41,7 @@ void tp::Personne::asgTelephone(const std::string& p_telephone)
 	}
 }
 
-tp::Personne::Personne(const string& p_nom, const string& p_prenom, const util::Date& p_dateNaissance,
+Personne::Personne(const string& p_nom, const string& p_prenom, const util::Date& p_dateNaissance,
 		const string& p_telephone) :
 		m_nom(p_nom), m_prenom(p_prenom), m_dateNaissance(p_dateNaissance), m_telephone(p_telephone)
 {
@@ -63,7 +63,16 @@ const string Personne::reqPersonneFormate() const
 
 bool Personne::operator ==(const Personne& p_personne) const
 {
-	return true;
+	if (m_nom == p_personne.m_nom && m_prenom == p_personne.m_prenom && m_dateNaissance == p_personne.m_dateNaissance
+			&& m_telephone == p_personne.m_telephone)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
 }
 
 } // namespace tp
