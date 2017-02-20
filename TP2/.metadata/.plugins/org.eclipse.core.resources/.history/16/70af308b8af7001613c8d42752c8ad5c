@@ -2,7 +2,7 @@
  * validationFormat.cpp
  *
  *  Created on: 2017-02-04
- * \author Philippe Trepanier
+ *      Author: Philippe Trepanier
  */
 #include "validationFormat.h"
 #include <iostream>
