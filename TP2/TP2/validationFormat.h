@@ -1,7 +1,7 @@
-/*
- * validationFormat.h
- *
- *  Created on: 2017-02-04
+/**
+ * \file validationFormat.h
+ * \brief Fichier de déclaration des fonctions permettant de valider des paramètres du programme
+ * \date 2017-02-04
  * \author Philippe Trepanier
  */
 

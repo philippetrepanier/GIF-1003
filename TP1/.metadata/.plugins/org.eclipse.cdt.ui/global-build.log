@@ -1,14 +1,12 @@
-13:01:16 **** Incremental Build of configuration Debug for project Fonctions ****
-make all 
-make: rien à faire pour « all ».
-13:01:17 **** Incremental Build of configuration Debug for project Fonctions ****
-make all 
-make: rien à faire pour « all ».
-13:01:26 **** Incremental Build of configuration Debug for project Fonctions ****
+20:17:21 **** Incremental Build of configuration Debug for project Fonctions ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:20:7: warning: unused variable ‘RAMQ’ [-Wunused-variable]
+  bool RAMQ = validerNumRAMQ(p_numero, "trepanier", "philippe", 5, 5, 1997, 'm');
+       ^
 Finished building: ../main.cpp
  
 Building target: Fonctions
@@ -16,21 +14,6 @@ Invoking: GCC C++ Linker
 g++  -o "Fonctions"  ./main.o ./validationFormat.o   
 Finished building target: Fonctions
  
-13:01:27 **** Incremental Build of configuration Debug for project Fonctions ****
-make all 
-make: rien à faire pour « all ».
-13:01:34 **** Incremental Build of configuration Debug for project Fonctions ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: Fonctions
-Invoking: GCC C++ Linker
-g++  -o "Fonctions"  ./main.o ./validationFormat.o   
-Finished building target: Fonctions
- 
-13:01:36 **** Incremental Build of configuration Debug for project Fonctions ****
+20:17:22 **** Incremental Build of configuration Debug for project Fonctions ****
 make all 
 make: rien à faire pour « all ».

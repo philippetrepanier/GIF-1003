@@ -1,7 +1,7 @@
-/*
- * validationFormat.cpp
- *
- *  Created on: 2017-02-04
+/**
+ * \file validationFormat.cpp
+ * \brief Fichier d'implémentation des fonctions permettant de valider des paramètres du programme
+ * \date 2017-02-04
  * \author Philippe Trepanier
  */
 #include "validationFormat.h"
@@ -17,6 +17,11 @@ std::locale loc;
 
 namespace util
 {
+/**
+ * \brief Fonction qui permet de valider le format national d'un numéro de téléphone
+ * \param[in] p_telephone numero de téléphone à vérifier
+ * \return valeur booléenne selon la validité du numéro de téléphone
+ */
 bool validerTelephone(const string& p_telephone)
 {
 	if (p_telephone.size() != 12)
@@ -84,6 +89,18 @@ bool validerTelephone(const string& p_telephone)
 	return true;
 }
 
+/**
+ * \brief Fonction qui permet de valider un numéro de RAMQ selon le standard émis par la société
+ *
+ * \param[in] p_numero numéro de RAMQ complet
+ * \param[in] p_nom nom de famille de la personne
+ * \param[in] p_prenom prenom de la personne
+ * \param[in] p_jourNaissance jour de naissance de la personne
+ * \param[in] p_moisNaissance mois de naissance de la personne
+ * \param[in[ p_anneeNaissance année de naissance de la personne
+ * \param[in] p_sex sexe de la personne
+ * \return une valeur booléenne selon la validité du numéro de RAMQ
+ */
 bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p_prenom, int p_jourNaissance,
 		int p_moisNaissance, int p_anneeNaissance, char p_sex)
 {
@@ -184,6 +201,13 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 	}
 	return false;
 }
+
+/**
+ * \brief Fonction qui permet de valider un nom ou prenom qui contient seulement des lettres
+ *
+ * \param[in[ p_nom nom à valider
+ * \return une valeur booléenne selon la validité du nom
+ */
 bool validerFormatNom(const string& p_nom)
 {
 	if (p_nom.size() == 0)

@@ -1,6 +1,6 @@
 /**
  * \file Personne.h
- * \brief
+ * \brief Fichier qui déclare la classe personne cotenant les informations d'un joueur de hockey faisant partie de l'équipe
  * \author Philippe Trepanier
  * \date 2017-02-19
  */
@@ -17,6 +17,9 @@ namespace tp
 /**
  * \class Personne
  * \brief Classe personne qui contient les informations d'un jouer de l'équipe
+ *        Elle contient le nom complet, la date de naissance, le numero de telephone.
+ *        Une méthode permet de renvoyer une personne formatée et de changer le numero de telephone
+ *
  */
 class Personne
 {
@@ -27,7 +30,7 @@ public:
 	//Getters
 	const std::string& reqNom() const;
 	const std::string& reqPrenom() const;
-	util::Date reqDateNaissance() const;
+	const util::Date reqDateNaissance() const;
 	const std::string& reqTelephone() const;
 	const std::string reqPersonneFormate() const;
 

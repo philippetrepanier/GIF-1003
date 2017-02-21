@@ -18,8 +18,9 @@ int main()
 
 	const string p_numero = "TREP 9705 0505";
 	bool RAMQ = validerNumRAMQ(p_numero, "trepanier", "philippe", 5, 5, 1997, 'm');
+	bool RAMQ2 = validerNumRAMQ("BONJ 7051 0112", "bonneau", "jeanne", 01, 01, 1970, 'F');
 
-	cout << "RAMQ valide: " << RAMQ << endl;
+	cout << "RAMQ valide: " << RAMQ2 << endl;
 
 	return 0;
 }
