@@ -413,3 +413,9 @@ org.eclipse.jface.text.BadLocationException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.gna.eclox.ui 4 0 2017-02-20 21:07:46.212
+!MESSAGE Error encountered. ALLOW_UNICODE_NAMES: missing TEXT property.
+
+!ENTRY org.gna.eclox.ui 4 0 2017-02-20 21:07:46.233
+!MESSAGE Error encountered. ALLOW_UNICODE_NAMES: missing or wrong TYPE property.
