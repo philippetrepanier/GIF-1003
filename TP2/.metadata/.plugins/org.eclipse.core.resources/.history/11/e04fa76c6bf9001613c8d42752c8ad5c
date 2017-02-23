@@ -98,7 +98,8 @@ const string Personne::reqPersonneFormate() const
  */
 bool Personne::operator ==(const Personne& p_personne) const
 {
-	if (m_nom == p_personne.m_nom && m_prenom == p_personne.m_prenom && m_dateNaissance == p_personne.m_dateNaissance)
+	if (m_nom == p_personne.m_nom && m_prenom == p_personne.m_prenom && m_dateNaissance == p_personne.m_dateNaissance
+			&& m_telephone == p_personne.m_telephone)
 	{
 		return true;
 	}
