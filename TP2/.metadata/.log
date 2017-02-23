@@ -422,3 +422,6 @@ org.eclipse.jface.text.BadLocationException
 
 !ENTRY org.eclipse.ui.browser 2 0 2017-02-20 21:09:40.662
 !MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]
+
+!ENTRY org.gna.eclox.ui 4 0 2017-02-23 09:58:16.018
+!MESSAGE Error encountered. HTML_FILE_EXTENSION: missing or wrong TYPE property.

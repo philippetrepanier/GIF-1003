@@ -1,6 +1,7 @@
 /**
  * \file main.cpp
- * \brief
+ * \brief Fichier principal du programme qui permet la création d'une personne et l'assignation de ses paramètres
+ * 			Par la suite le programme demande à l'utilisateur un changement de numero de télephone.
  * \author Philippe Trepanier
  * \date 2017-02-19
  */
@@ -119,6 +120,10 @@ int main()
 	cout << "|  Modification réussie!  |" << endl;
 	cout << "===========================" << endl << endl;
 	cout << personne.reqPersonneFormate() << endl << endl;
+
+	cout << "======================" << endl;
+	cout << "|  Fin du programme  |" << endl;
+	cout << "======================" << endl << endl;
 
 	return 0;
 

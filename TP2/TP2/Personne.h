@@ -35,7 +35,7 @@ public:
 	const std::string reqPersonneFormate() const;
 
 	//Setters
-	void asgTelephone(const std::string& telephone);
+	void asgTelephone(const std::string& p_telephone);
 
 	//Surcharges
 	bool operator==(const Personne& p_personne) const;

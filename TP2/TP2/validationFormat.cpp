@@ -80,11 +80,15 @@ bool validerTelephone(const string& p_telephone)
 			}
 		}
 
-		if (indicatif_dans_liste == 0)
+		if (p_telephone[0] == '9')
+		{
+			return true;
+		}
+		else if (indicatif_dans_liste == 0)
 		{
 			return false;
 		}
-	} // namespace tp
+	}
 
 	return true;
 }
@@ -97,7 +101,7 @@ bool validerTelephone(const string& p_telephone)
  * \param[in] p_prenom prenom de la personne
  * \param[in] p_jourNaissance jour de naissance de la personne
  * \param[in] p_moisNaissance mois de naissance de la personne
- * \param[in[ p_anneeNaissance année de naissance de la personne
+ * \param[in] p_anneeNaissance année de naissance de la personne
  * \param[in] p_sex sexe de la personne
  * \return une valeur booléenne selon la validité du numéro de RAMQ
  */
@@ -205,7 +209,7 @@ bool validerNumRAMQ(const string& p_numero, const string& p_nom, const string& p
 /**
  * \brief Fonction qui permet de valider un nom ou prenom qui contient seulement des lettres
  *
- * \param[in[ p_nom nom à valider
+ * \param[in] p_nom nom à valider
  * \return une valeur booléenne selon la validité du nom
  */
 bool validerFormatNom(const string& p_nom)
