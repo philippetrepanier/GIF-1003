@@ -1,0 +1,22 @@
+/**
+ * \file TicTacToe.h
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#ifndef TICTACTOE_H_
+#define TICTACTOE_H_
+
+namespace labo
+{
+
+class TicTacToe
+{
+public:
+	TicTacToe();
+};
+
+} /* namespace labo */
+
+#endif /* TICTACTOE_H_ */

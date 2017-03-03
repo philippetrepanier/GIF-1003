@@ -1,0 +1,27 @@
+/**
+ * \file TicTacToe.h
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#ifndef TICTACTOE_H_
+#define TICTACTOE_H_
+
+namespace labo
+{
+
+const int TAILLE_PLATEAU = 3;
+
+class TicTacToe
+{
+public:
+	TicTacToe();
+
+private:
+	char m_plateau[TAILLE_PLATEAU][TAILLE_PLATEAU]
+};
+
+} /* namespace labo */
+
+#endif /* TICTACTOE_H_ */

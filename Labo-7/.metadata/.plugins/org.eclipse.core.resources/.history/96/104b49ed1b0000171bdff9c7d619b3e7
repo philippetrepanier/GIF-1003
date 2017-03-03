@@ -1,0 +1,19 @@
+/**
+ * \file TicTacToe.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#include "TicTacToe.h"
+
+namespace labo
+{
+
+TicTacToe::TicTacToe()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+} /* namespace labo */

@@ -1,0 +1,20 @@
+/**
+ * \file main.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#include <iostream>
+#include "TicTacToe.h"
+
+using namespace std;
+using namespace labo;
+
+int main()
+{
+
+	TicTacToe jeu;
+	return 0;
+}
+

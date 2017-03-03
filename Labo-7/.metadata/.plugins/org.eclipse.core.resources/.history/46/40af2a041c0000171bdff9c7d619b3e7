@@ -1,0 +1,27 @@
+/**
+ * \file TicTacToe.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#include "TicTacToe.h"
+
+using namespace std;
+
+namespace labo
+{
+
+TicTacToe::TicTacToe()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+ostream& operator<<(ostream& os, const TicTacToe t)
+{
+	os << t.reqPlateauFormate();
+	return os;
+}
+
+} /* namespace labo */
