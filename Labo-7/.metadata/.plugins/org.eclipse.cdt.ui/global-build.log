@@ -1,0 +1,40 @@
+08:56:17 **** Incremental Build of configuration Debug for project Labo-7 ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Labo-7
+Invoking: GCC C++ Linker
+g++  -o "Labo-7"  ./Complexe.o ./main.o   
+Finished building target: Labo-7
+ 
+08:56:18 **** Incremental Build of configuration Debug for project Labo-7 ****
+make all 
+make: rien à faire pour « all ».
+09:00:36 **** Incremental Build of configuration Debug for project Labo-7 ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Labo-7
+Invoking: GCC C++ Linker
+g++  -o "Labo-7"  ./Complexe.o ./main.o   
+Finished building target: Labo-7
+ 
+09:00:40 **** Incremental Build of configuration Debug for project Labo-7 ****
+make all 
+make: rien à faire pour « all ».

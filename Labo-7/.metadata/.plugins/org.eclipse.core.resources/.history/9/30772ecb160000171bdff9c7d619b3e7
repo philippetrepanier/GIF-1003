@@ -1,0 +1,53 @@
+/**
+ * \file Complexe.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#include "Complexe.h"
+#include <sstream>
+
+using namespace std;
+
+namespace labo
+{
+
+Complexe::Complexe(double re, double im) :
+		m_re(re), m_im(im)
+{
+}
+
+Complexe Complexe::operator +(const Complexe& z2) const
+{
+	double re = m_re + z2.m_re;
+	double im = m_im + z2.m_im;
+	return Complexe(re, im);
+}
+
+ostream& operator<<(ostream& os, const Complexe& z)
+{
+	os << z.reqComplexeFormate();
+	return os;
+}
+
+string Complexe::reqComplexeFormate() const
+{
+	ostringstream os;
+	os << m_re;
+	if (m_im >= 0)
+	{
+		os << " + " << m_im;
+	}
+	else
+	{
+		os << " - " << -m_im;
+	}
+
+	os << "i";
+	return os.str();
+}
+
+}
+
+/* namespace labo */

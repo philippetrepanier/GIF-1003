@@ -1,0 +1,19 @@
+/**
+ * \file Complexe.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#include "Complexe.h"
+
+namespace labo
+{
+
+Complexe::Complexe()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+} /* namespace labo */

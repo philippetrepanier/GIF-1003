@@ -81,3 +81,6 @@ Invoking: GCC C++ Linker
 g++  -o "TP2"  ./ContratException.o ./Date.o ./Personne.o ./main.o ./validationFormat.o   
 Finished building target: TP2
  
+10:11:08 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+make: rien à faire pour « all ».

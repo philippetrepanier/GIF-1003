@@ -1,0 +1,29 @@
+/**
+ * \file Complexe.h
+ * \brief
+ * \author etudiant
+ * \date 2017-03-03
+ */
+
+#ifndef COMPLEXE_H_
+#define COMPLEXE_H_
+
+#include <iostream>
+
+namespace labo
+{
+
+class Complexe
+{
+public:
+	Complexe(double, double);
+	friend std::ostream& operator<<(std::ostream&, Complexe);
+
+private:
+	double m_re;
+	double m_im;
+};
+
+} /* namespace labo */
+
+#endif /* COMPLEXE_H_ */
