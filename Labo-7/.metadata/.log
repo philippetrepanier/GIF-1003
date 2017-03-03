@@ -14,3 +14,6 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-03-03 09:09:17.597
 !MESSAGE Indexed 'TicTacToe' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-03 09:53:03.271
+!MESSAGE Indexed 'NombresComplexes' (2 sources, 120 headers) in 1,23 sec: 10 039 declarations; 19 276 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
