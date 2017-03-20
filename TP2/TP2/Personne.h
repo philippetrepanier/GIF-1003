@@ -32,7 +32,7 @@ public:
 	const std::string& reqPrenom() const;
 	const util::Date reqDateNaissance() const;
 	const std::string& reqTelephone() const;
-	const std::string reqPersonneFormate() const;
+	std::string reqPersonneFormate() const;
 
 	//Setters
 	void asgTelephone(const std::string& p_telephone);
