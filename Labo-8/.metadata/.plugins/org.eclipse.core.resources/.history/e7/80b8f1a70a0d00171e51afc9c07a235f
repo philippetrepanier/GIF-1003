@@ -1,0 +1,24 @@
+/**
+ * \file Sphere.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-19
+ */
+
+#include "Sphere.h"
+
+namespace labo8
+{
+
+Sphere::Sphere()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Sphere::~Sphere()
+{
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace labo8 */

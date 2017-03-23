@@ -1,0 +1,63 @@
+09:55:40 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+09:55:42 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+09:55:54 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+09:55:55 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+09:55:55 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+09:55:56 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+09:56:14 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+09:56:14 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+09:56:14 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 

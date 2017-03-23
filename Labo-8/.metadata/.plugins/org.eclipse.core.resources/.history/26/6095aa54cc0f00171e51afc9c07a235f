@@ -1,0 +1,17 @@
+/**
+ * \file main.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-19
+ */
+
+#include "Sphere.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	double rayon = 5;
+	labo8::Sphere spheretest(rayon);
+	double volume = spheretest.reqVolume();
+	return 0;
+}

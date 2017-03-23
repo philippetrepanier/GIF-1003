@@ -1,0 +1,15 @@
+09:56:14 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+
+09:56:15 Build Finished (took 782ms)
+
