@@ -1,0 +1,114 @@
+12:45:09 **** Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:29:10: warning: unused variable ‘mois’ [-Wunused-variable]
+      int mois = determineMois();
+          ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+12:50:03 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+12:50:04 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+12:50:04 **** Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp:2:26: fatal error: getest/gtest.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+12:50:09 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+12:50:09 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+12:50:09 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+12:50:12 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+13:03:58 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:03:58 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:03:58 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefault_Test::TestBody()’:
+../EmployeTest.cpp:6:2: error: ‘Employe’ was not declared in this scope
+  Employe e("Pierre-Marc", "Levasseur");
+  ^
+../EmployeTest.cpp:6:2: note: suggested alternative:
+In file included from ../EmployeTest.cpp:1:0:
+/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib/Employe.h:20:7: note:   ‘labo10::Employe’
+ class Employe
+       ^
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+13:04:01 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:04:01 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:04:01 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefault_Test::TestBody()’:
+../EmployeTest.cpp:6:2: error: ‘Employe’ was not declared in this scope
+  Employe e("Pierre-Marc", "Levasseur");
+  ^
+../EmployeTest.cpp:6:2: note: suggested alternative:
+In file included from ../EmployeTest.cpp:1:0:
+/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib/Employe.h:20:7: note:   ‘labo10::Employe’
+ class Employe
+       ^
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+13:04:21 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:04:21 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:04:22 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/Labo-9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 

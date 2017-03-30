@@ -1,0 +1,28 @@
+/**
+ * \file Entraineur.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-28
+ */
+
+#include "Entraineur.h"
+
+namespace tp
+{
+
+Entraineur::Entraineur(const std::string& p_nom, const std::string& p_prenom, const util::Date& p_dateNaissance,
+		const std::string& p_telephone, const std::string& p_numRAMQ, char p_sexe) :
+		m_nom(p_nom), m_prenom(p_prenom), m_dateNaissance(p_dateNaissance), m_telephone(p_telephone), m_sexe(p_sexe)
+{
+	PRECONDITION(util::validerFormatNom(p_prenom));
+	PRECONDITION(util::validerFormatNom(p_prenom));
+	PRECONDITION(util::validerTelephone(p_telephone));
+	PRECONDITION(
+			util::Date::validerDate(p_dateNaissance.reqJour(), p_dateNaissance.reqMois(), p_dateNaissance.reqAnnee()));
+}
+Entraineur::~Entraineur()
+{
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace tp */

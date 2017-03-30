@@ -1,0 +1,15 @@
+/**
+ * \file main.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-28
+ */
+#include "Personne.h"
+#include "Entraineur.h"
+
+int main()
+{
+	tp::Entraineur();
+	return 0;
+}
+

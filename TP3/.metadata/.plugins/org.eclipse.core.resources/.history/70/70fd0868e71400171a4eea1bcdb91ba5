@@ -1,0 +1,30 @@
+/**
+ * \file Annuaire.h
+ * \brief
+ * \author etudiant
+ * \date 2017-03-29
+ */
+
+#ifndef ANNUAIRE_H_
+#define ANNUAIRE_H_
+#include <string>
+#include <vector>
+
+namespace tp
+{
+
+class Annuaire
+{
+public:
+	Annuaire();
+	virtual ~Annuaire();
+
+private:
+	std::string m_nomClub;
+	std::vector<Personne*> m_vMembres;
+
+};
+
+} /* namespace tp */
+
+#endif /* ANNUAIRE_H_ */
