@@ -1,7 +1,7 @@
 /**
  * \file Joueur.h
- * \brief
- * \author etudiant
+ * \brief Classe Joueur, dérivée de la classe Joueur.
+ * \author Philippe Trépanier
  * \date 2017-03-29
  */
 
@@ -22,9 +22,11 @@ public:
 	virtual ~Joueur();
 	virtual std::string reqPersonneFormate() const;
 	virtual Personne* clone() const;
+
 	const std::string& reqPosition() const;
 
 private:
+	void verifieInvariant() const;
 	std::string m_position;
 };
 

@@ -233,5 +233,18 @@ bool validerFormatNom(const string& p_nom)
 	return true;
 }
 
+/**
+ * \brief convertit la chaine passée en paramètre en majuscules
+ * \param[in] p_chaine la chaine à convertir
+ * \param[out] la chaine passée en entrée est convertie
+ */
+void convertitEnMajuscules(string& p_chaine)
+{
+	for (unsigned i = 0; i < p_chaine.size(); ++i)
+	{
+		p_chaine[i] = toupper(p_chaine[i]);
+	}
+}
+
 } // namespace util
 

@@ -49,13 +49,14 @@ public:
 	bool operator==(const Personne& p_personne) const;
 
 protected:
-	void verifieInvariant() const;
 
 	std::string m_nom;
 	std::string m_prenom;
 	util::Date m_dateNaissance;
 	std::string m_telephone;
+private:
 
+	void verifieInvariant() const;
 };
 } // namespace tp
 #endif /* PERSONNE_H_ */

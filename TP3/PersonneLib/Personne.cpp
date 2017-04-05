@@ -1,6 +1,6 @@
 /**
  * \file Personne.cpp
- * \brief Fichier d'implémentation de la classe Personne
+ * \brief Implémentation de la classe de base abstraite Personne. Elle contient les informations de base sur les personnes.
  * \author Philippe Trepanier
  * \date 2017-02-19
  */
@@ -59,6 +59,8 @@ void Personne::asgTelephone(const string& p_telephone)
 {
 	PRECONDITION(util::validerTelephone(p_telephone));
 	m_telephone = p_telephone;
+	POSTCONDITION(m_telephone == p_telephone);
+	INVARIANTS();
 }
 
 /**
@@ -74,11 +76,16 @@ Personne::Personne(const string& p_nom, const string& p_prenom, const util::Date
 		const string& p_telephone) :
 		m_nom(p_nom), m_prenom(p_prenom), m_dateNaissance(p_dateNaissance), m_telephone(p_telephone)
 {
-	PRECONDITION(util::validerFormatNom(p_prenom));
+	PRECONDITION(util::validerFormatNom(p_nom));
 	PRECONDITION(util::validerFormatNom(p_prenom));
 	PRECONDITION(util::validerTelephone(p_telephone));
 	PRECONDITION(
 			util::Date::validerDate(p_dateNaissance.reqJour(), p_dateNaissance.reqMois(), p_dateNaissance.reqAnnee()));
+	POSTCONDITION(m_nom == p_nom);
+	POSTCONDITION(m_prenom == p_prenom);
+	POSTCONDITION(m_dateNaissance == p_dateNaissance);
+	POSTCONDITION(m_telephone == p_telephone);
+	INVARIANTS();
 }
 
 /**
@@ -116,4 +123,13 @@ bool Personne::operator ==(const Personne& p_personne) const
 
 }
 
+void Personne::verifieInvariant() const
+{
+	INVARIANT(util::validerFormatNom(m_nom));
+	INVARIANT(util::validerFormatNom(m_prenom));
+	INVARIANT(
+			util::Date::validerDate(m_dateNaissance.reqJour(), m_dateNaissance.reqMois(), m_dateNaissance.reqAnnee()));
+	INVARIANT(util::validerTelephone(m_telephone));
+}
 } // namespace tp
+

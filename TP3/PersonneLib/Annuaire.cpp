@@ -1,7 +1,7 @@
 /**
  * \file Annuaire.cpp
  * \brief
- * \author etudiant
+ * \author Philippe Trépanier
  * \date 2017-03-29
  */
 
@@ -12,7 +12,7 @@ using namespace std;
 namespace tp
 {
 
-Annuaire::Annuaire(string p_nomClub) :
+Annuaire::Annuaire(const string& p_nomClub) :
 		m_nomClub(p_nomClub)
 {
 	// TODO Auto-generated constructor stub
@@ -21,7 +21,10 @@ Annuaire::Annuaire(string p_nomClub) :
 
 Annuaire::~Annuaire()
 {
-	// TODO Auto-generated destructor stub
+	for (unsigned int i = 0; i < m_vMembres.size(); ++i)
+	{
+		delete m_vMembres[i];
+	}
 }
 
 string Annuaire::reqNom() const
@@ -34,9 +37,9 @@ string Annuaire::reqAnnuaireFormate() const
 	ostringstream os;
 	os << "Club : " << reqNom() << endl;
 	os << "---------------------" << endl;
-	for (vector<Personne>::const_iterator i = m_vMembres.begin(); i != m_vMembres.end(); ++i)
+	for (unsigned int i = 0; i < m_vMembres.size(); ++i)
 	{
-		os << *i;
+		os << (*m_vMembres[i]).reqPersonneFormate();
 	}
 
 	return os.str();

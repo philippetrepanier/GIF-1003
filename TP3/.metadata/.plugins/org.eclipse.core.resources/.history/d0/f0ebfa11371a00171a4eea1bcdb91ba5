@@ -1,0 +1,60 @@
+/**
+ * \file Entraineur.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-28
+ */
+
+#include "Entraineur.h"
+#include <sstream>
+static const long JOURS_POUR_18_ANS = long(-18 * 365.25);
+
+using namespace std;
+
+namespace tp
+{
+
+Entraineur::Entraineur(const std::string& p_nom, const std::string& p_prenom, const util::Date& p_dateNaissance,
+		const std::string& p_telephone, const std::string& p_numRAMQ, char p_sexe) :
+		Personne(p_nom, p_prenom, p_dateNaissance, p_telephone), m_numRAMQ(p_numRAMQ), m_sexe(p_sexe)
+{
+	PRECONDITION(util::validerFormatNom(p_prenom));
+	PRECONDITION(util::validerFormatNom(p_nom));
+	PRECONDITION(util::validerTelephone(p_telephone));
+	PRECONDITION(
+			util::Date::validerDate(p_dateNaissance.reqJour(), p_dateNaissance.reqMois(), p_dateNaissance.reqAnnee()));
+	PRECONDITION(
+			util::validerNumRAMQ(p_numRAMQ, p_nom, p_prenom, p_dateNaissance.reqJour(), p_dateNaissance.reqMois(),
+					p_dateNaissance.reqAnnee(), p_sexe));
+
+	util::Date datePour18;
+	datePour18.ajouteNbJour(JOURS_POUR_18_ANS);
+	PRECONDITION(p_dateNaissance < datePour18);
+}
+Entraineur::~Entraineur()
+{
+// TODO Auto-generated destructor stub
+}
+
+std::string Entraineur::reqPersonneFormate() const
+{
+	ostringstream os;
+	os << Personne::reqPersonneFormate();
+
+	os << "Numero de RAMQ    : " << Entraineur::reqNumRamq() << endl;
+	os << "---------------------" << endl;
+
+	return os.str();
+}
+
+const std::string& Entraineur::reqNumRamq() const
+{
+	return m_numRAMQ;
+}
+
+Personne* Entraineur::clone() const
+{
+	return new Entraineur(*this);
+}
+
+} /* namespace tp */

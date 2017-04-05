@@ -1,0 +1,49 @@
+/**
+ * \file Joueur.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-29
+ */
+
+#include "Joueur.h"
+#include <sstream>
+
+using namespace std;
+
+namespace tp
+{
+
+Joueur::~Joueur()
+{
+	// TODO Auto-generated destructor stub
+}
+
+Joueur::Joueur(const string& p_nom, const string& p_prenom, const util::Date& p_dateNaissance,
+		const string& p_telephone, const string& p_position) :
+		Personne(p_nom, p_prenom, p_dateNaissance, p_telephone), m_position(p_position)
+{
+
+}
+
+string Joueur::reqPersonneFormate() const
+{
+	ostringstream os;
+	os << Personne::reqPersonneFormate();
+
+	os << "Position          : " << Joueur::reqPosition() << endl;
+	os << "---------------------" << endl;
+
+	return os.str();
+}
+
+Personne* Joueur::clone() const
+{
+	return new Joueur(*this);
+}
+
+const string& Joueur::reqPosition() const
+{
+	return m_position;
+}
+
+} /* namespace tp */

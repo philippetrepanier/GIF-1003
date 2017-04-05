@@ -18,5 +18,7 @@ bool validerNumRAMQ(const std::string& p_numero, const std::string& p_nom, const
 		int p_jourNaissance, int p_moisNaissance, int p_anneeNaissance, char p_sex);
 bool validerFormatNom(const std::string& p_nom);
 
+void convertitEnMajuscules(std::string& p_chaine);
+
 } //Namespace util
 #endif /* VALIDATIONFORMAT_H_ */

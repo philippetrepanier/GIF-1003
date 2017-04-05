@@ -1,7 +1,7 @@
 /**
  * \file Entraineur.h
- * \brief
- * \author etudiant
+ * \brief Classe Entraineur, dérivée de la classe Personne
+ * \author Philippe Trépanier
  * \date 2017-03-28
  */
 
@@ -26,6 +26,7 @@ public:
 	virtual Personne* clone() const;
 
 private:
+	void verifieInvariant() const;
 	std::string m_numRAMQ;
 	char m_sexe;
 

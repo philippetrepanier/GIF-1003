@@ -1,7 +1,7 @@
 /**
  * \file Entraineur.cpp
- * \brief
- * \author etudiant
+ * \brief Implémentation de la classe Entraineur.
+ * \author Philippe Trépanier
  * \date 2017-03-28
  */
 
@@ -16,13 +16,9 @@ namespace tp
 
 Entraineur::Entraineur(const std::string& p_nom, const std::string& p_prenom, const util::Date& p_dateNaissance,
 		const std::string& p_telephone, const std::string& p_numRAMQ, char p_sexe) :
-		Personne(p_nom, p_prenom, p_dateNaissance, p_telephone), m_sexe(p_sexe)
+		Personne(p_nom, p_prenom, p_dateNaissance, p_telephone), m_numRAMQ(p_numRAMQ), m_sexe(p_sexe)
 {
-	PRECONDITION(util::validerFormatNom(p_prenom));
-	PRECONDITION(util::validerFormatNom(p_prenom));
-	PRECONDITION(util::validerTelephone(p_telephone));
-	PRECONDITION(
-			util::Date::validerDate(p_dateNaissance.reqJour(), p_dateNaissance.reqMois(), p_dateNaissance.reqAnnee()));
+	PRECONDITION(p_sexe == 'M' || p_sexe == 'F' || p_sexe == 'm' || p_sexe == 'f');
 	PRECONDITION(
 			util::validerNumRAMQ(p_numRAMQ, p_nom, p_prenom, p_dateNaissance.reqJour(), p_dateNaissance.reqMois(),
 					p_dateNaissance.reqAnnee(), p_sexe));
@@ -30,6 +26,10 @@ Entraineur::Entraineur(const std::string& p_nom, const std::string& p_prenom, co
 	util::Date datePour18;
 	datePour18.ajouteNbJour(JOURS_POUR_18_ANS);
 	PRECONDITION(p_dateNaissance < datePour18);
+
+	POSTCONDITION(m_numRAMQ == p_numRAMQ);
+	POSTCONDITION(m_sexe == p_sexe);
+	INVARIANTS();
 }
 Entraineur::~Entraineur()
 {
@@ -55,6 +55,14 @@ const std::string& Entraineur::reqNumRamq() const
 Personne* Entraineur::clone() const
 {
 	return new Entraineur(*this);
+}
+
+void Entraineur::verifieInvariant() const
+{
+	INVARIANT(m_sexe == 'M' || m_sexe == 'F' || m_sexe == 'm' || m_sexe == 'f');
+	INVARIANT(
+			util::validerNumRAMQ(m_numRAMQ, m_nom, m_prenom, m_dateNaissance.reqJour(), m_dateNaissance.reqMois(),
+					m_dateNaissance.reqAnnee(), m_sexe));
 }
 
 } /* namespace tp */

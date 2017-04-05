@@ -1,0 +1,50 @@
+/**
+ * \file Annuaire.cpp
+ * \brief
+ * \author etudiant
+ * \date 2017-03-29
+ */
+
+#include "Annuaire.h"
+#include <sstream>
+
+using namespace std;
+namespace tp
+{
+
+Annuaire::Annuaire(string p_nomClub) :
+		m_nomClub(p_nomClub)
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Annuaire::~Annuaire()
+{
+	// TODO Auto-generated destructor stub
+}
+
+string Annuaire::reqNom() const
+{
+	return m_nomClub;
+}
+
+string Annuaire::reqAnnuaireFormate() const
+{
+	ostringstream os;
+	os << "Club : " << reqNom() << endl;
+	os << "---------------------" << endl;
+	for (vector<Personne>::const_iterator i = m_vMembres.begin(); i != m_vMembres.end(); ++i)
+	{
+		os << *i;
+	}
+
+	return os.str();
+}
+
+void Annuaire::ajouterPersonne(const Personne& p_personne)
+{
+	m_vMembres.push_back(p_personne.clone());
+}
+
+} /* namespace tp */

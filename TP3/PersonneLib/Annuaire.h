@@ -1,7 +1,7 @@
 /**
  * \file Annuaire.h
  * \brief
- * \author etudiant
+ * \author Philippe Trépanier
  * \date 2017-03-29
  */
 
@@ -9,7 +9,8 @@
 #define ANNUAIRE_H_
 #include <string>
 #include <vector>
-#include "Personne.h"
+#include "Joueur.h"
+#include "Entraineur.h"
 
 namespace tp
 {
@@ -17,7 +18,7 @@ namespace tp
 class Annuaire
 {
 public:
-	Annuaire(std::string p_nomClub);
+	Annuaire(const std::string& p_nomClub);
 	~Annuaire();
 	std::string reqNom() const;
 	std::string reqAnnuaireFormate() const;
