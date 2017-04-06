@@ -75,7 +75,11 @@ const string& Joueur::reqPosition() const
 
 void Joueur::verifieInvariant() const
 {
-	INVARIANT(m_position == "CENTRE" || m_position == "AILIER" || m_position == "DÉFENSEUR" || m_position == "GARDIEN");
+	string m_positionUpper(m_position);
+	util::convertitEnMajuscules(m_positionUpper);
+	INVARIANT(
+			m_positionUpper == "CENTRE" || m_positionUpper == "AILIER" || m_positionUpper == "DÉFENSEUR"
+					|| m_positionUpper == "GARDIEN");
 
 }
 

@@ -1,0 +1,138 @@
+/**
+ * \file EntraineurTesteur.cpp
+ * \brief Test unitaire de la classe Entraineur
+ * \author Philippe Trepanier
+ * \date 2017-04-06
+ */
+
+#include <gtest/gtest.h>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include "Entraineur.h"
+
+using namespace std;
+using namespace tp;
+using namespace util;
+/**
+ * \defgroup EntraineurTesteur Test des classes pour Annuaire
+ *	@{
+ */
+/**
+ * \test Test du constructeur
+ *
+ * 		Cas valides: Création d'un objet Entraineur et vérification de l'assignation de tous les attributs
+ *		Cas invalides:
+ *		    Nom vide et sans chiffre
+ *		    Prénom vide et sans chiffre
+ *		    Date invalide
+ *		    Numero de telephone valide
+ *		    Numero de RAMQ valide
+ *
+ */
+TEST(Entraineur,Constructeur)
+{
+	Entraineur UnEntraineur("Roy", "Jeremie", util::Date(1, 10, 1996), "418 123-4567", "ROYJ 9610 0129", 'M');
+
+	ASSERT_EQ("Roy", UnEntraineur.reqNom());
+	ASSERT_EQ("Jeremie", UnEntraineur.reqPrenom());
+	ASSERT_EQ(util::Date(1, 10, 1996), UnEntraineur.reqDateNaissance());
+	ASSERT_EQ("418 123-4567", UnEntraineur.reqTelephone());
+	ASSERT_EQ("ROYJ 9610 0129", UnEntraineur.reqNumRamq());
+}
+
+//cas invalide
+TEST(Entraineur,ConstructeurInvalideNom)
+{
+	ASSERT_THROW(Entraineur UnEntraineur("", "Jeremie", util::Date(1, 10, 1996), "418 123-4567", "ROYJ 9610 0129", 'M'),ContratException);
+}
+TEST(Entraineur,ConstructeurInvalidePrenom)
+{
+	ASSERT_THROW(Entraineur UnEntraineur("Roy", "", util::Date(1, 10, 1996), "418 123-4567", "ROYJ 9610 0129", 'M'),ContratException);
+}
+TEST(Entraineur,ConstructeurInvalideNumeroTelephone)
+{
+	ASSERT_THROW(Entraineur UnEntraineur("Roy", "Jeremie", util::Date(1, 10, 1900), "418 123-4567", "ROYJ 9610 0129", 'M'),ContratException);
+}
+TEST(Entraineur,ConstructeurInvalideNumeroRamq)
+{
+	ASSERT_THROW(Entraineur UnEntraineur("Roy", "Jeremie", util::Date(1, 10, 1996), "418 123-4567", "", 'M'),ContratException);
+}
+
+/**
+ * \brief Création d'une fixture à utiliser pour les méthodes public de la classe de test
+ */
+class UnEntraineur: public ::testing::Test
+{
+public:
+	UnEntraineur() :
+			entraineur("Roy", "Jeremie", util::Date(1, 10, 1996), "418 123-4567", "ROYJ 9610 0129", 'M')
+	{
+	}
+	;
+	Entraineur entraineur;
+};
+
+/**
+ * \test Test de la méthode reqNom()
+ *
+ *     Cas valide: vérifier le retour du nom de famille.
+ *     Cas invalide: aucun.
+ */
+TEST_F(UnEntraineur, reqNom)
+{
+	ASSERT_EQ("Roy",entraineur.reqNom());
+}
+/**
+ * \test Test de la méthode reqPrenom()
+ *
+ *     Cas valide: vérifier le retour du prénom de l'entraineur.
+ *     Cas invalide: aucun.
+ */
+TEST_F(UnEntraineur, reqPrenom)
+{
+	ASSERT_EQ("Jeremie",entraineur.reqPrenom());
+}
+
+/**
+ * \test Test de la méthode reqDateNaissance()
+ *
+ *     Cas valide: vérifier le retour de la date de naissance de l'entraineur.
+ *     Cas invalide: aucun.
+ */
+TEST_F(UnEntraineur, reqDateNaissance)
+{
+	ASSERT_EQ(util::Date(1,10,1996),entraineur.reqDateNaissance());
+}
+
+/**
+ * \test Test de la méthode reqDateNaissance()
+ *
+ *     Cas valide: vérifier le retour de la date de naissance de l'entraineur.
+ *     Cas invalide: aucun.
+ */
+TEST_F(UnEntraineur, reqNumRamq)
+{
+	ASSERT_EQ("ROYJ 9610 0129",entraineur.reqNumRamq());
+}
+
+/**
+ * \test Test de la méthode std::string reqEmployeFormate();
+ *
+ *        Cas valides: vérifier le retour des information sur l'objets Employe formaté
+ *        Cas invalides: aucun
+ */
+TEST_F(UnEntraineur,reqEmployeFormate)
+{
+
+	ostringstream os;
+
+	os << "Nom               :Roy" << endl;
+	os << "Prenom            :Jeremie" << endl;
+	os << "Date de naissance :" << entraineur.reqDateNaissance().reqDateFormatee() << endl;
+	os << "Telephone         :418 123-4567" << endl;
+	os << "Numero de RAMQ    :ROYJ 9610 0129" << endl;
+	os << "---------------------" << endl;
+
+	ASSERT_EQ(os.str(), entraineur.reqPersonneFormate());
+}

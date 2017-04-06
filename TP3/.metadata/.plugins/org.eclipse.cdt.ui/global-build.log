@@ -1,15 +1,3 @@
-22:34:43 **** Incremental Build of configuration Debug for project Personne_test ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: Personne_test
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Personne_test"  ./main.o   -lPersonneLib
-Finished building target: Personne_test
- 
-22:34:44 **** Incremental Build of configuration Debug for project Personne_test ****
+00:27:53 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
 make: rien à faire pour « all ».
