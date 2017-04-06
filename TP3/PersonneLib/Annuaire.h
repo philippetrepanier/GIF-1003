@@ -1,6 +1,6 @@
 /**
  * \file Annuaire.h
- * \brief
+ * \brief Classe Annuaire
  * \author Philippe Trépanier
  * \date 2017-03-29
  */
@@ -15,7 +15,12 @@
 
 namespace tp
 {
-
+/**
+ * \class Annuaire
+ * \brief Classe annuaire qui contient les Joueurs et les Entraineurs de l'équipe
+ * 			Elle contient un attribut avec le nom du club.
+ * 	        Une méthode permet de renvoyer l'annuaire sous une chaine de caractère formatée
+ */
 class Annuaire
 {
 public:

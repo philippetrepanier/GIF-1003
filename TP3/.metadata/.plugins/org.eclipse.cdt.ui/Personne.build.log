@@ -1,10 +1,6 @@
-01:09:02 **** Incremental Build of configuration Debug for project Personne ****
+10:49:32 **** Incremental Build of configuration Debug for project Personne ****
 make all 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-Finished building target: Personne
- 
+make: rien à faire pour « all ».
 
-01:09:03 Build Finished (took 320ms)
+10:49:32 Build Finished (took 82ms)
 

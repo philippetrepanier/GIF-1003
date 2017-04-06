@@ -140,3 +140,15 @@ TEST_F(UnEntraineur,reqEntraineurFormate)
 
 	ASSERT_EQ(os.str(), entraineur.reqPersonneFormate());
 }
+/**
+ * \test Test de la méthode clone();
+ *
+ *        Cas valides: vérifier la copie d'un objet avec la méthode clone()
+ *        Cas invalides: aucun
+ */
+TEST_F(UnEntraineur, clone)
+{
+	Personne* clone = entraineur.clone();
+	ASSERT_EQ(entraineur.reqPersonneFormate(), clone->reqPersonneFormate());
+}
+

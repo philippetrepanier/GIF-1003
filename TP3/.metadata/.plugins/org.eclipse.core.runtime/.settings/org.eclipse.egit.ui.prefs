@@ -1,2 +1,4 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Labo 7</message>\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>moiti\u00E9 des tests unitaires</message>\n<message>D\u00E9but des tests unitaires</message>\n<message>Labo 7</message>\n</messages>
 eclipse.preferences.version=1
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

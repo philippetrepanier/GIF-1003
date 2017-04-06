@@ -46,7 +46,10 @@ Entraineur::~Entraineur()
 {
 
 }
-
+/**
+ * \brief Retourne une string contenant les informations contenues pour un entraineur
+ * \return informations de l'entraineur
+ */
 std::string Entraineur::reqPersonneFormate() const
 {
 	ostringstream os;
@@ -57,12 +60,18 @@ std::string Entraineur::reqPersonneFormate() const
 
 	return os.str();
 }
-
+/**
+ * \brief Retourne le numero de RAMQ de l'entraineur
+ * \return informations de l'annuaire
+ */
 const std::string& Entraineur::reqNumRamq() const
 {
 	return m_numRAMQ;
 }
-
+/**
+ * \brief Retourne un clone de l'objet entraineur
+ * \return une copie de l'entraineur
+ */
 Personne* Entraineur::clone() const
 {
 	return new Entraineur(*this);

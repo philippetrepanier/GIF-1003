@@ -64,7 +64,7 @@ TEST(Joueur,ConstructeurTelephoneInvalide)
 }
 
 /**
- * \brief Création d'une fixture à utiliser pour les méthodes public de la classe de test
+ * \brief Création d'une fixture à utiliser pour les méthodes public de la classe Joueur
  */
 class UnJoueur: public ::testing::Test
 {
