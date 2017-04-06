@@ -1,0 +1,71 @@
+/**
+ * \file Joueur.cpp
+ * \brief Implémentation de la classe Joueur.
+ * \author Philippe Trépanier
+ * \date 2017-03-29
+ */
+
+#include "Joueur.h"
+#include <sstream>
+static const long JOURS_POUR_18_ANS = long(-18 * 365.25);
+static const long JOURS_POUR_15_ANS = long(-15 * 365.25);
+
+using namespace std;
+
+namespace tp
+{
+
+Joueur::~Joueur()
+{
+}
+
+Joueur::Joueur(const string& p_nom, const string& p_prenom, const util::Date& p_dateNaissance,
+		const string& p_telephone, const string& p_position) :
+		Personne(p_nom, p_prenom, p_dateNaissance, p_telephone), m_position(p_position)
+{
+	string p_positionUpper(p_position);
+	util::convertitEnMajuscules(p_positionUpper);
+	PRECONDITION(
+			p_positionUpper == "CENTRE" || p_positionUpper == "AILIER" || p_positionUpper == "DÉFENSEUR"
+					|| p_positionUpper == "GARDIEN");
+
+	util::Date datePour18;
+	util::Date datePour15;
+	datePour18.ajouteNbJour(JOURS_POUR_18_ANS);
+	datePour15.ajouteNbJour(JOURS_POUR_15_ANS);
+	PRECONDITION(p_dateNaissance < datePour18);
+	PRECONDITION(datePour15 < p_dateNaissance);
+
+	POSTCONDITION(m_position == p_position);
+	INVARIANTS();
+}
+
+string Joueur::reqPersonneFormate() const
+{
+	ostringstream os;
+	os << Personne::reqPersonneFormate();
+
+	os << "Position          : " << Joueur::reqPosition() << endl;
+	os << "---------------------" << endl;
+
+	return os.str();
+}
+
+Personne* Joueur::clone() const
+{
+	return new Joueur(*this);
+}
+
+const string& Joueur::reqPosition() const
+{
+	return m_position;
+}
+
+void Joueur::verifieInvariant() const
+{
+	INVARIANT(m_position == "CENTRE" || m_position == "AILIER" || m_position == "DÉFENSEUR" || m_position == "GARDIEN");
+
+}
+
+} /* namespace tp */
+

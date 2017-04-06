@@ -7,6 +7,8 @@
 
 #include "Joueur.h"
 #include <sstream>
+static const long JOURS_POUR_18_ANS = long(-18 * 365.25);
+static const long JOURS_POUR_15_ANS = long(-15 * 365.25);
 
 using namespace std;
 
@@ -16,16 +18,35 @@ namespace tp
 Joueur::~Joueur()
 {
 }
-
+/**
+ * \brief Constructeur avec paramètre
+ *        Création d'un objet Joueur à partir de valeurs passées en paramètres.
+ * \param[in] p_nom nom du Joueur
+ * \param[in] p_prenom prenom du Joueur
+ * \param[in] p_dateNaissance date de naissance du Joueur
+ * \param[in] p_telephone numero de telephone du Joueur
+ * \param[in] p_position position du Joueur
+ * \pre p_position est parmi la liste suivante: CENTRE, AILIER, DEFENSEUR, GARDIEN
+ * \pre p_heure > 0
+ * \post m_tauxHoraire prend la valeur de p_tauxHoraire
+ * \post m_heure prend la valeur de p_heure
+ */
 Joueur::Joueur(const string& p_nom, const string& p_prenom, const util::Date& p_dateNaissance,
 		const string& p_telephone, const string& p_position) :
 		Personne(p_nom, p_prenom, p_dateNaissance, p_telephone), m_position(p_position)
 {
-	PRECONDITION();
+	string p_positionUpper(p_position);
+	util::convertitEnMajuscules(p_positionUpper);
+	PRECONDITION(
+			p_positionUpper == "CENTRE" || p_positionUpper == "AILIER" || p_positionUpper == "DEFENSEUR"
+					|| p_positionUpper == "GARDIEN");
 
 	util::Date datePour18;
+	util::Date datePour15;
 	datePour18.ajouteNbJour(JOURS_POUR_18_ANS);
-	PRECONDITION(p_dateNaissance < datePour18);
+	datePour15.ajouteNbJour(JOURS_POUR_15_ANS);
+	PRECONDITION(datePour18 < p_dateNaissance);
+	PRECONDITION(p_dateNaissance < datePour15);
 
 	POSTCONDITION(m_position == p_position);
 	INVARIANTS();
@@ -52,4 +73,11 @@ const string& Joueur::reqPosition() const
 	return m_position;
 }
 
+void Joueur::verifieInvariant() const
+{
+	INVARIANT(m_position == "CENTRE" || m_position == "AILIER" || m_position == "DÉFENSEUR" || m_position == "GARDIEN");
+
+}
+
 } /* namespace tp */
+

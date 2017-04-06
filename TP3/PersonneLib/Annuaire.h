@@ -11,6 +11,7 @@
 #include <vector>
 #include "Joueur.h"
 #include "Entraineur.h"
+#include "ContratException.h"
 
 namespace tp
 {
@@ -26,6 +27,7 @@ public:
 	void ajouterPersonne(const Personne& p_personne);
 
 private:
+	void verifieInvariant() const;
 	std::string m_nomClub;
 	std::vector<Personne*> m_vMembres;
 

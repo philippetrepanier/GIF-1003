@@ -12,7 +12,10 @@
 
 namespace tp
 {
-
+/**
+ * \class Joueur
+ * \param Classe dérivée de la classe Personne
+ */
 class Joueur: public Personne
 {
 public:

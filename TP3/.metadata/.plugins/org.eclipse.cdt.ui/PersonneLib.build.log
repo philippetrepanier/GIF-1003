@@ -1,4 +1,4 @@
-16:19:21 **** Incremental Build of configuration Debug for project PersonneLib ****
+22:28:00 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
 Building file: ../Annuaire.cpp
 Invoking: GCC C++ Compiler
@@ -32,5 +32,5 @@ ar: création de libPersonneLib.a
 Finished building target: libPersonneLib.a
  
 
-16:19:23 Build Finished (took 1s.431ms)
+22:28:01 Build Finished (took 983ms)
 

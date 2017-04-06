@@ -53,7 +53,7 @@ const string& Personne::reqTelephone() const
  * \brief Assigne un nouveau numero de telephone à une personne
  * \param[in] p_telephone est le nouveau numero de telephone qui respecte le format national
  * \pre p_telephone doit correspondre à un numero de telephone valide
- * \post l'objet courant a été correctement assigné
+ * \post m_telephone prend la valeur de p_telephone
  */
 void Personne::asgTelephone(const string& p_telephone)
 {
@@ -70,7 +70,10 @@ void Personne::asgTelephone(const string& p_telephone)
  * \param[in] p_dateNaissance date de la naissance de la personne
  * \param[in] p_telephone numero de telephone qui respecte le format national
  * \pre p_nom, p_prenom, p_dateNaissance et p_telephone doivent correspondent à un format valide
- * \post l'objet courant a été correctement créé et assigné
+ * \post m_nom prend la valeur de p_nom
+ * \post m_prenom prend la valeur de p_prenom
+ * \post m_dateNaissance prend la valeur de p_dateNaissance
+ * \post m_telephone prend la valeur de p_telephone
  */
 Personne::Personne(const string& p_nom, const string& p_prenom, const util::Date& p_dateNaissance,
 		const string& p_telephone) :
@@ -122,7 +125,9 @@ bool Personne::operator ==(const Personne& p_personne) const
 	}
 
 }
-
+/**
+ * \brief Vérifie les invariants de classe
+ */
 void Personne::verifieInvariant() const
 {
 	INVARIANT(util::validerFormatNom(m_nom));

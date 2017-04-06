@@ -33,7 +33,7 @@ Entraineur::Entraineur(const std::string& p_nom, const std::string& p_prenom, co
 }
 Entraineur::~Entraineur()
 {
-// TODO Auto-generated destructor stub
+
 }
 
 std::string Entraineur::reqPersonneFormate() const

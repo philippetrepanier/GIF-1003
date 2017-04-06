@@ -7,6 +7,7 @@
 
 #include "Annuaire.h"
 #include <sstream>
+#include "ContratException.h"
 
 using namespace std;
 namespace tp
@@ -15,16 +16,18 @@ namespace tp
 Annuaire::Annuaire(const string& p_nomClub) :
 		m_nomClub(p_nomClub)
 {
-	// TODO Auto-generated constructor stub
+	PRECONDITION(!(p_nomClub.empty()));
 
+	POSTCONDITION(p_nomClub == m_nomClub);
 }
 
 Annuaire::~Annuaire()
 {
-	for (unsigned int i = 0; i < m_vMembres.size(); ++i)
+	for (size_t i = 0; i < m_vMembres.size(); ++i)
 	{
 		delete m_vMembres[i];
 	}
+	m_vMembres.clear();
 }
 
 string Annuaire::reqNom() const
@@ -37,7 +40,7 @@ string Annuaire::reqAnnuaireFormate() const
 	ostringstream os;
 	os << "Club : " << reqNom() << endl;
 	os << "---------------------" << endl;
-	for (unsigned int i = 0; i < m_vMembres.size(); ++i)
+	for (size_t i = 0; i < m_vMembres.size(); ++i)
 	{
 		os << (*m_vMembres[i]).reqPersonneFormate();
 	}
@@ -48,6 +51,13 @@ string Annuaire::reqAnnuaireFormate() const
 void Annuaire::ajouterPersonne(const Personne& p_personne)
 {
 	m_vMembres.push_back(p_personne.clone());
+	INVARIANTS();
+}
+
+void Annuaire::verifieInvariant() const
+{
+	INVARIANT(!(m_nomClub.empty()));
 }
 
 } /* namespace tp */
+
