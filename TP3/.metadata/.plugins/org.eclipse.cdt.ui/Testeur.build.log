@@ -1,51 +1,15 @@
-01:32:43 **** Incremental Build of configuration Debug for project Testeur ****
+01:49:06 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
-Building file: ../AnnuaireTesteur.cpp
+Building file: ../PersonneTesteur.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:45:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:47:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:48:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:49:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:50:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:51:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:53:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:54:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:55:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:56:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:57:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:58:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
+Finished building: ../PersonneTesteur.cpp
  
 Building target: Testeur
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
 Finished building target: Testeur
  
 
-01:32:43 Build Finished (took 627ms)
+01:49:07 Build Finished (took 685ms)
 
