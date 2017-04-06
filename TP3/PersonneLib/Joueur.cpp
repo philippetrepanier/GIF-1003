@@ -51,7 +51,10 @@ Joueur::Joueur(const string& p_nom, const string& p_prenom, const util::Date& p_
 	POSTCONDITION(m_position == p_position);
 	INVARIANTS();
 }
-
+/**
+ * \brief Affiche les informations du joueur sous forme d'une chaîne de caractère formatée
+ * \return les informations sur un joueur
+ */
 string Joueur::reqPersonneFormate() const
 {
 	ostringstream os;
@@ -62,17 +65,25 @@ string Joueur::reqPersonneFormate() const
 
 	return os.str();
 }
-
+/**
+ * \brief Permet la copie d'un Joueur
+ * \return objet copié
+ */
 Personne* Joueur::clone() const
 {
 	return new Joueur(*this);
 }
-
+/**
+ * \brief Accesseur sur la position d'un joueur
+ * \return la position
+ */
 const string& Joueur::reqPosition() const
 {
 	return m_position;
 }
-
+/**
+ * \brief Vérifier les invariants de classe
+ */
 void Joueur::verifieInvariant() const
 {
 	string m_positionUpper(m_position);

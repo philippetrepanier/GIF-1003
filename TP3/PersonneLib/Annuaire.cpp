@@ -53,7 +53,9 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	m_vMembres.push_back(p_personne.clone());
 	INVARIANTS();
 }
-
+/**
+ * \brief Vérifier les invariants de classe
+ */
 void Annuaire::verifieInvariant() const
 {
 	INVARIANT(!(m_nomClub.empty()));

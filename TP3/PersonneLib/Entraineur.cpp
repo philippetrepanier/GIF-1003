@@ -13,7 +13,18 @@ using namespace std;
 
 namespace tp
 {
-
+/**
+ * \brief Constructeur d'un nouvel objet de la classe Entraineur
+ * \param[in] p_nom nom de l'entraineur
+ * \param[in] p_prenom prenom de l'entraineur
+ * \param[in] p_dateNaissance date de la naissance de l'entraineur
+ * \param[in] p_telephone numero de telephone de l'entraineur
+ * \pre p_nom, p_prenom, p_dateNaissance et p_telephone doivent correspondent à un format valide
+ * \post m_nom prend la valeur de p_nom
+ * \post m_prenom prend la valeur de p_prenom
+ * \post m_dateNaissance prend la valeur de p_dateNaissance
+ * \post m_telephone prend la valeur de p_telephone
+ */
 Entraineur::Entraineur(const std::string& p_nom, const std::string& p_prenom, const util::Date& p_dateNaissance,
 		const std::string& p_telephone, const std::string& p_numRAMQ, char p_sexe) :
 		Personne(p_nom, p_prenom, p_dateNaissance, p_telephone), m_numRAMQ(p_numRAMQ), m_sexe(p_sexe)
@@ -56,7 +67,9 @@ Personne* Entraineur::clone() const
 {
 	return new Entraineur(*this);
 }
-
+/**
+ * \brief Vérifier les invariants de classe
+ */
 void Entraineur::verifieInvariant() const
 {
 	INVARIANT(m_sexe == 'M' || m_sexe == 'F' || m_sexe == 'm' || m_sexe == 'f');

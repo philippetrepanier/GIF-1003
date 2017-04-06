@@ -35,7 +35,7 @@ TEST(Joueur,ConstructeurDefaut)
 	string prenom = "Julie";
 	Date dateNaissance(29, 12, 2001);
 	string numeroTelephone = "581 998-3333";
-	string position = "CEnTRE";
+	string position = "CENTRE";
 
 	Joueur unJoueur(nom, prenom, dateNaissance, numeroTelephone, position);
 

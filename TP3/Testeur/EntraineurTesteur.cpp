@@ -23,11 +23,11 @@ using namespace util;
  *
  * 		Cas valides: Création d'un objet Entraineur et vérification de l'assignation de tous les attributs
  *		Cas invalides:
- *		    Nom vide et sans chiffre
  *		    Prénom vide et sans chiffre
+ *		    Nom vide et sans chiffre
+ *		    Numero de RAMQ valide
  *		    Date invalide (mineur)
  *		    Numero de telephone valide
- *		    Numero de RAMQ valide
  *
  */
 TEST(Entraineur,Constructeur)
@@ -50,6 +50,10 @@ TEST(Entraineur,ConstructeurInvalidePrenom)
 {
 	ASSERT_THROW(Entraineur UnEntraineur("Trepanier", "", util::Date(18, 5, 1997), "418 123-4567", "TREP 9705 1819", 'M'),ContratException);
 }
+TEST(Entraineur,ConstructeurInvalideNumeroRamq)
+{
+	ASSERT_THROW(Entraineur UnEntraineur("Trepanier", "Philippe", util::Date(18, 5, 1997), "418 123-4567", "TREP97051818", 'M'),ContratException);
+}
 TEST(Entraineur,ConstructeurInvalideDate)
 {
 	ASSERT_THROW(Entraineur UnEntraineur("Trepanier", "Philippe", util::Date(18, 5, 2007), "418 123-4567", "TREP 0705 1819", 'M'),ContratException);
@@ -57,10 +61,6 @@ TEST(Entraineur,ConstructeurInvalideDate)
 TEST(Entraineur,ConstructeurInvalideNumeroTelephone)
 {
 	ASSERT_THROW(Entraineur UnEntraineur("Trepanier", "Philippe", util::Date(18, 5, 1997), "4181234567", "TREP 9705 1818", 'M'),ContratException);
-}
-TEST(Entraineur,ConstructeurInvalideNumeroRamq)
-{
-	ASSERT_THROW(Entraineur UnEntraineur("Trepanier", "Philippe", util::Date(18, 5, 1997), "418 123-4567", "TREP97051818", 'M'),ContratException);
 }
 
 /**
@@ -90,8 +90,8 @@ TEST_F(UnEntraineur, reqNom)
 /**
  * \test Test de la méthode reqPrenom()
  *
- *     Cas valide: vérifier le retour du prénom de l'entraineur.
- *     Cas invalide: aucun.
+ *     Cas valide: vérifier le retour du prénom de l'entraineur
+ *     Cas invalide: aucun
  */
 TEST_F(UnEntraineur, reqPrenom)
 {
@@ -101,8 +101,8 @@ TEST_F(UnEntraineur, reqPrenom)
 /**
  * \test Test de la méthode reqDateNaissance()
  *
- *     Cas valide: vérifier le retour de la date de naissance de l'entraineur.
- *     Cas invalide: aucun.
+ *     Cas valide: vérifier le retour de la date de naissance de l'entraineur
+ *     Cas invalide: aucun
  */
 TEST_F(UnEntraineur, reqDateNaissance)
 {
@@ -112,8 +112,8 @@ TEST_F(UnEntraineur, reqDateNaissance)
 /**
  * \test Test de la méthode reqDateNaissance()
  *
- *     Cas valide: vérifier le retour de la date de naissance de l'entraineur.
- *     Cas invalide: aucun.
+ *     Cas valide: vérifier le retour de la date de naissance de l'entraineur
+ *     Cas invalide: aucun
  */
 TEST_F(UnEntraineur, reqNumRamq)
 {
@@ -121,12 +121,12 @@ TEST_F(UnEntraineur, reqNumRamq)
 }
 
 /**
- * \test Test de la méthode std::string reqEmployeFormate();
+ * \test Test de la méthode std::string reqEntraineurFormate();
  *
- *        Cas valides: vérifier le retour des information sur l'objets Employe formaté
+ *        Cas valides: vérifier le retour des information sur l'objets Entraineur formaté
  *        Cas invalides: aucun
  */
-TEST_F(UnEntraineur,reqEmployeFormate)
+TEST_F(UnEntraineur,reqEntraineurFormate)
 {
 
 	ostringstream os;

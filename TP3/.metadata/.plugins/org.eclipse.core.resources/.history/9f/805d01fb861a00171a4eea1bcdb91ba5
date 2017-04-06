@@ -1,0 +1,47 @@
+/**
+ * \file AnnuaireTesteur.cpp
+ * \brief
+ * \author Philippe Trépanier
+ * \date 2017-04-06
+ */
+
+#include "Annuaire.h"
+#include <gtest/gtest.h>
+#include <string>
+#include <iostream>
+
+using namespace std;
+using namespace util;
+using namespace tp;
+
+class AnnuaireParam: public ::testing::Test
+{
+public:
+	AnnuaireParam() :
+			annuaire("NOM DU CLUB")
+	{
+	}
+	;
+	Annuaire annuaire;
+
+	virtual double gains() const
+	{
+		return Employe::gains();
+	}
+
+	virtual string reqEmployeFormate() const
+	{
+		return Employe::reqEmployeFormate();
+	}
+};
+
+TEST(Annuaire, AnnuaireConstructeur)
+{
+	tp::Annuaire test();
+	string nomClub = "unClub";
+	tp::Annuaire annuaire(nomClub);
+	ASSERT_EQ(nomClub, annuaire.reqNom());
+}
+
+TEST_F(annuaire, reqAnnuaireFormate);*/
+
