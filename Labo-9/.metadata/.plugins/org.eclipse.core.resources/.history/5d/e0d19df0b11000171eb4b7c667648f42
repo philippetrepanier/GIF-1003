@@ -1,7 +1,0 @@
-#include "Employe.h"
-#include <getest/gtest.h>
-
-TEST(Employe, ConstructeurParDefault)
-{
-	ASSERT_EQ(1, 1);
-}

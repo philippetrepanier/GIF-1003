@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="${workspace_loc:/EmployeLib/Debug}" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
-	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
-	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
-	</section>
-	<section name="completion_proposal_size">
-	</section>
-</section>
