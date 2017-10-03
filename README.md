@@ -1,6 +1,6 @@
-# GIF-1003
-## PROGRAMMATION AVANCÉE EN C++
-#### Exercices et TP dans le cadre du cours
+# PROGRAMMATION AVANCÉE EN C++
+## GIF-1003
+### Exercices et TP dans le cadre du cours
 
 Les exercices et TP ont été réalisés dans le cadre du cours Programmation avancée en C++.
 
