@@ -1,0 +1,13 @@
+!SESSION 2017-04-06 22:07:40.601 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -data .
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-06 22:08:35.973
+!MESSAGE Indexed 'EmployeGUI' (2 sources, 1 headers) in 0,371 sec: 12 declarations; 11 references; 4 unresolved inclusions; 1 syntax errors; 11 unresolved names (32 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-06 22:13:08.271
+!MESSAGE Indexed 'EmployeGUI' (3 sources, 568 headers) in 11,8 sec: 76 153 declarations; 107 317 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)

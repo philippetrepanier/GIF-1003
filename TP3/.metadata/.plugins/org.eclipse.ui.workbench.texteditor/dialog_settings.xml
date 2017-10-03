@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.cdt.internal.ui.preferences.CTemplatePreferencePage$CEditTemplateDialog_dialogBounds">
+		<item value="515" key="DIALOG_WIDTH"/>
+		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="353" key="DIALOG_HEIGHT"/>
+		<item value="186" key="DIALOG_X_ORIGIN"/>
+		<item value="354" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Personne" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="Employe"/>
+			<item value="Date(1, 10, 1996)"/>
+			<item value="Roy"/>
+			<item value="Jeremie"/>
+			<item value="la personne"/>
+			<item value="valide"/>
+			<item value="joueur"/>
+			<item value="TREP 9705 1818"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Personne"/>
+			<item value="Date(18, 5, 1997)"/>
+			<item value="Trepanier"/>
+			<item value="Philippe"/>
+			<item value="l&apos;entraineur"/>
+			<item value="ent"/>
+			<item value="TREP 9705 1819"/>
+			<item value="m_positionUpper"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="255" key="DIALOG_WIDTH"/>
+		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="408" key="DIALOG_HEIGHT"/>
+		<item value="1331" key="DIALOG_X_ORIGIN"/>
+		<item value="210" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

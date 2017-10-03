@@ -1,0 +1,8 @@
+com.trolltech.qtcppproject.qtautosetmkcmd=true
+com.trolltech.qtcppproject.qtautosetmkspec=true
+com.trolltech.qtcppproject.qtversionbinpath.0=/usr/bin
+com.trolltech.qtcppproject.qtversioncount=1
+com.trolltech.qtcppproject.qtversiondefault=Qt4
+com.trolltech.qtcppproject.qtversionincludepath.0=/usr/include/qt4
+com.trolltech.qtcppproject.qtversionname.0=Qt4
+eclipse.preferences.version=1

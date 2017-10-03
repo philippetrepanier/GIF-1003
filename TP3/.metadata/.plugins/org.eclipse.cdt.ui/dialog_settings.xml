@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="${workspace_loc:/PersonneLib/Debug}" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
+	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="226" key="size.height"/>
+		<item value="800" key="size.width"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="NewClassWizardPage">
+		<item value="true" key="stubSelected1"/>
+		<item value="true" key="stubVirtual1"/>
+		<item value="true" key="namespaceSelected"/>
+		<item value="false" key="stubInline0"/>
+		<item value="false" key="stubInline1"/>
+		<item value="tp" key="namespace"/>
+		<item value="false" key="testFileSelected"/>
+		<item value="true" key="stubSelected0"/>
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.wizards.classwizard.NamespaceSelectionDialogSettings">
+		<item value="false" key="show_enums"/>
+		<item value="false" key="show_unions"/>
+		<item value="false" key="show_macros"/>
+		<item value="false" key="show_classes"/>
+		<item value="false" key="show_functions"/>
+		<item value="false" key="show_lowlevel"/>
+		<item value="true" key="show_namespaces"/>
+		<item value="false" key="show_enumerators"/>
+		<item value="false" key="show_structs"/>
+		<item value="335" key="x"/>
+		<item value="405" key="width"/>
+		<item value="25" key="y"/>
+		<item value="false" key="show_typedefs"/>
+		<item value="false" key="show_variables"/>
+		<item value="683" key="height"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.wizards.classwizard.NewBaseClassSelectionDialogSettings">
+		<item value="false" key="show_enums"/>
+		<item value="false" key="show_unions"/>
+		<item value="false" key="show_macros"/>
+		<item value="true" key="show_classes"/>
+		<item value="false" key="show_functions"/>
+		<item value="true" key="show_lowlevel"/>
+		<item value="false" key="show_namespaces"/>
+		<item value="false" key="show_enumerators"/>
+		<item value="true" key="show_structs"/>
+		<item value="384" key="x"/>
+		<item value="306" key="width"/>
+		<item value="25" key="y"/>
+		<item value="false" key="show_typedefs"/>
+		<item value="false" key="show_variables"/>
+		<item value="741" key="height"/>
+	</section>
+</section>
